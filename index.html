@@ -7,10 +7,6 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-       Remove this if you use the .htaccess -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
   <title>David Litmark</title>
   <meta name="description" content="The website of David Litmark">
   <meta name="author" content="David Litmark">
@@ -60,10 +56,21 @@
         </header>
         <ol>
           <li>All ideas are collected and prioritized in a product backlog, as user stories.</li>
-          <li>The top user stories are added to the sprint backlog for the coming sprint (that is, iteration). The ambition is to complete one sprint a week. Each sprint is short, timeboxed to no more than a few spare off-hours.</li>
-          <li>Following each sprint the new version of the site is released online. Release early, release often. Yep. By the way, the previous site is archived ( e.g /sprint1 ).
+          <li>The top user story is selected and included in the sprint backlog during the coming sprint (that is, iteration). As soon as that user story is done, a new is added to the sprint backlog<sup>*</sup>. The ambition is to complete one sprint a week. Each sprint is short, timeboxed to no more than a few spare off-hours.</li>
+          <li>Following each sprint a new version of the site is released online. Release early, release often. The result from the previous sprint is archived (for example, to find the site from sprint 1 use the following URL: /sprint/1).
           <li>The most recent sprint backlog is added to the site.</li>
           <li>The new release is announced on twitter <a href="http://twitter.com/davidlitmark">(follow @davidlitmark).</a></li>
+        </ol>
+        <br/>
+        <p><sup>*</sup> This is a modification compared to the first sprint that had more of a scrum approach whereas this process is more influenced by kanban, and more suitable since the available hours each week are unknown.</p>
+      </section>
+      <section>
+        <header>
+          <h2>Definition of done</h2>
+        </header>
+        <p>These requirements must be fulfilled each sprint.</p>
+        <ol>
+          <li>The html must validate (HTML5)</li>
         </ol>
       </section>
       <section>
@@ -90,13 +97,14 @@
           <li>jQuery Mobile</li>
           <li>Node</li>
           <li>headjs</li>
+          <li>320 and Up</li>
         </ul>
         <h3>Misc. stuff</h3>
         <ul>
           <li>Progressive enhancement</li>
           <li>Unobfuscated JavaScript</li>
           <li>Responsive web design</li>
-          <li>Mobile first</li>
+          <li>Mobile First</li>
           <li>Test driven developemnt (TDD)</li>
           <li>Behavior driven development (BDD)</li>
           <li>Modular Scale (modularscale.com)</li>
@@ -120,21 +128,24 @@
         <header>        
           <h2>Completed Iterations</h2>
         </header>  
-        <h3>Sprint 2</h3>
+        <h3>Sprint 2 / Build 0002</h3>
           <ul>
-            <li>The site displays the html5 logo</li>
+            <li>The site displays the HTML5 logo</li>
             <li>All JavaScript is minified</li>
             <li>All CSS is minified</li>
-            <li>There is a link to my LinkedIn profile</li>
-            <li>There is a link to twitter (follow me)</li>
+            <li>The site links to my LinkedIn profile</li>
+            <li>The site links to my twitter (follow me)</li>
+            <li>A Definition of Done (DoD) is added to the site. Each sprint must fullfill the DoD prior to deployment.</li>
+            <li>The process is updated as it now has more of a kanban approach, rather than scrum</li>
+            <li>The build number is displayed next to the sprint increment, for clarification</li>
           </ul>
-        <h3>Sprint 1</h3>
+        <h3>Sprint 1 / Build 0001</h3>
           <ul>
             <li>The site contains an introduction on the purpose of the process</li>
             <li>Humans TXT is filled out. The logo is added to the site and linked to humans.txt</li>
             <li>The site is versioned by a version control system (outcome: github/davidlitmark)</li>
             <li>The web traffic is tracked by using Google Analytics</li>
-            <li>The site has a very basic design and layout (to be improved)</li>
+            <li>The site has a very basic design and layout (to be improved)</li>            
           </ul>
         <h3>Sprint 0</h3>
           <ul>
@@ -149,10 +160,10 @@
     </div>
     <footer>
       <a href="humans.txt">
-        <img src="img/humanstxt-isolated-blank.gif">
+        <img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT" title="Humans TXT">
       </a>
       <a href="http://www.w3.org/html/logo/">
-        <img src="img/html5_logo_64.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
+        <img src="img/HTML5_Logo_64.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
       </a>
     </footer>
   </div> <!--! end of #container -->
