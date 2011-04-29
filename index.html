@@ -1,219 +1,254 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+
+<!-- 
+320 and Up boilerplate extension
+Author: Andy Clarke
+Version: 0.9b
+URL: http://stuffandnonsense.co.uk/projects/320andup 
+-->
+
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" manifest="default.appcache?v=1" lang="en"><!--<![endif]-->
+
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
-  <title>David Litmark</title>
-  <meta name="description" content="The website of David Litmark">
-  <meta name="author" content="David Litmark">
+<title>David Litmark</title>
+<meta name="description" content="The website of David Litmar">
+<meta name="author" content="David Litmark">
 
-  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 
-  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<!-- For less capable mobile browsers
+<link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
 
+<!-- For all browsers -->
+<link rel="stylesheet" href="css/style.css?v=1">
 
-  <!-- CSS: implied media="all" -->
-  <link rel="stylesheet" href="css/style.css?v=2">
+<!-- JavaScript at bottom except for Modernizr -->
+<script src="js/libs/modernizr-1.7.min.js"></script>
 
-  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
-  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="img/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="/favicon.ico">
 
-  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="js/libs/modernizr-1.7.min.js"></script>
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-startup-image" href="img/splash.png">
 
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
 </head>
 
-<body>
+<body class="clearfix">
 
-  <div id="container">
-    <header>
-      <h1>David Litmark</h1>
-    </header>
-    <div id="main" role="main">
+  <header role="banner" class="clearfix">
+    <h1>David Litmark</h1>
+  </header>
+
+  <div class="content clearfix">
+
+    <div role="main">
       <section>
-        <header>      
-          <h2>The idea</h2>
-        </header>
-        <h3>What is this?</h3>
-        <p>An experiment. A process. This website is created incrementally and the progress is public and announced on twitter.</p>
-        <h3>Why?</h3>
-        <p>For a number of reasons. To learn and improve. And because it´s fun.</p>
-        <h3>How?</h3>
-        <p>By releasing early and releasing often. And by following the process outlined below.</p>
-        <h3>The result?</h3>
-        <p>Who knows? That said, I do have a direction and a bunch of requirements. But hey, since this is an agile process they may change over time.</p>
+      <header>
+            <h2>The idea</h2>
+          </header>
+          <h3>What is this?</h3>
+          <p>An experiment. A process. This website is created incrementally and the progress is public and announced on twitter.</p>
+          <h3>Why?</h3>
+          <p>For a number of reasons. To learn and improve. And because it´s fun.</p>
+          <h3>How?</h3>
+          <p>By releasing early and releasing often. And by following the process outlined below.</p>
+          <h3>The result?</h3>
+          <p>Who knows? That said, I do have a direction and a bunch of requirements. But hey, since this is an agile process they may change over time.</p>
       </section>
-      <section>
-        <header>
-          <h2>The Process</h2>
-        </header>
-        <ol>
-          <li>All ideas are collected and prioritized in a product backlog, as user stories.</li>
-          <li>The top user story is selected and included in the sprint backlog during the coming sprint (that is, iteration). As soon as that user story is done, a new is added to the sprint backlog<sup>*</sup>. The ambition is to complete one sprint a week. Each sprint is short, timeboxed to no more than a few spare off-hours.</li>
-          <li>Following each sprint a new version of the site is released online. Release early, release often. The result from the previous sprint is archived (for example, to find the site from sprint 1 use the following URL: /sprint/1).
-          <li>The most recent sprint backlog is added to the site.</li>
-          <li>The new release is announced on twitter <a href="http://twitter.com/davidlitmark">(follow @davidlitmark).</a></li>
-        </ol>
-        <br/>
-        <p><sup>*</sup> This is a modification compared to the first sprint that had more of a Scrum approach whereas this process is more influenced by Kanban, and more suitable since the available hours each week are unknown.</p>
-      </section>
-      <section>
-        <header>
-          <h2>Definition of done</h2>
-        </header>
-        <p>These requirements must be fulfilled each sprint.</p>
-        <ol>
-          <li>The html must validate (HTML5)</li>
-        </ol>
-      </section>
-      <section id="stuff">
-        <header>
-          <h2>Stuff to consider</h2>
-        </header>
-        <p>Explored stuff is <mark>highlighted</mark>.</p>          
-        <h3>Tech. stuff</h3>
-        <ul>
-          <li>Backbone</li>
-          <li>Knockout</li>
-          <li>Amplify</li>
-          <li>
-            <mark>humans TXT</mark>
-          </li>
-          <li>Typekit</li>
-          <li>Treesaver</li>
-          <li>Less CSS</li>
-          <li>
-            <mark>html5 boilerplate</mark>
-          </li>
-          <li>underscore</li>
-          <li>Less Framework</li>
-          <li>Modernizr</li>
-          <li>YepNope</li>
-          <li>
-            <mark>github</mark>
-          </li>
-          <li>qUnit</li>
-          <li>Jasmine</li>
-          <li>jQuery Mobile</li>
-          <li>Node</li>
-          <li>headjs</li>
-          <li>320 and Up</li>
-          <li>pavlov</li>
-          <li>Spine</li>
-        </ul>
-        <h3>Misc. stuff</h3>
-        <ul>
-          <li>
-            <mark>Progressive enhancement</mark>
-          </li>
-          <li>Unobfuscated JavaScript</li>
-          <li>Responsive web design</li>
-          <li>
-            <mark>Mobile First</mark>
-          </li>
-          <li>Test driven developemnt (TDD)</li>
-          <li>Behavior driven development (BDD)</li>
-          <li>Modular Scale (modularscale.com)</li>
-        </ul>
-      </section>
-      <section>
-        <header>
-          <h2>Who am I?</h2>    
-        </header>
-        <p>A front-end developer / SharePoint developer currently employed by mogul (www.mogul.com). Disclaimer: This content does not necessarily reflect the opinions of my employer.</p>
-        <ul>
-          <li>
-            <a href="http://twitter.com/davidlitmark">Follow me on twitter: @davidlitmark</a>
-          </li>
-          <li>
-            <a href="http://se.linkedin.com/pub/david-litmark/2/347/670">Read my profile on LinkedIn</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <header>        
-          <h2>Completed Iterations</h2>
-        </header>  
-        <h3>Sprint 3 / Build 0003</h3>
+        <section>
+          <header>
+            <h2>The Process</h2>
+          </header>
+          <ol>
+            <li>All ideas are collected and prioritized in a product backlog, as user stories.</li>
+            <li>The top user story is selected and included in the sprint backlog during the coming sprint (that is, iteration). As soon as that user story is done, a new is added to the sprint backlog<sup>*</sup>. The ambition is to complete one sprint a week. Each sprint is short, timeboxed to no more than a few spare off-hours.</li>
+            <li>Following each sprint a new version of the site is released online. Release early, release often. The result from the previous sprint is archived (for example, to find the site from sprint 1 use the following URL: /sprint/1).
+            <li>The most recent sprint backlog is added to the site.</li>
+            <li>The new release is announced on twitter <a href="http://twitter.com/davidlitmark">(follow @davidlitmark).</a></li>
+          </ol>
+          <br/>
+          <p><sup>*</sup> This is a modification compared to the first sprint that had more of a Scrum approach whereas this process is more influenced by Kanban, and more suitable since the available hours each week are unknown.</p>
+        </section>
+        <section>
+          <header>
+            <h2>Definition of done</h2>
+          </header>
+          <p>These requirements must be fulfilled each sprint.</p>
+          <ol>
+            <li>The html must validate (HTML5)</li>
+          </ol>
+        </section>
+        <section id="stuff">
+          <header>
+            <h2>Stuff to consider</h2>
+          </header>
+          <p>Explored stuff is <mark>highlighted</mark>.</p>          
+          <h3>Tech. stuff</h3>
           <ul>
-            <li>A user can find out about explored stuff (currently highlighted)</li>
-            <li>A user is served optimized images</li>
-            <li>A user can read user stories formulated according to the guidelines in <a href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685">User Stories Applied</a>.</li>
+            <li>Backbone</li>
+            <li>Knockout</li>
+            <li>Amplify</li>
+            <li>
+              <mark>humans TXT</mark>
+            </li>
+            <li>Typekit</li>
+            <li>Treesaver</li>
+            <li>Less CSS</li>
+            <li>
+              <mark>html5 boilerplate</mark>
+            </li>
+            <li>underscore</li>
+            <li>Less Framework</li>
+            <li>Modernizr</li>
+            <li>YepNope</li>
+            <li>
+              <mark>github</mark>
+            </li>
+            <li>qUnit</li>
+            <li>Jasmine</li>
+            <li>jQuery Mobile</li>
+            <li>Node</li>
+            <li>headjs</li>
+            <li>
+              <mark>320 and Up</mark>
+            </li>
+            <li>pavlov</li>
+            <li>Spine</li>
           </ul>
-        <h3>Sprint 2 / Build 0002</h3>
+          <h3>Misc. stuff</h3>
           <ul>
-            <li>A user can find the HTML5 logo on the site</li>            
-            <li>A user can click a link to my LinkedIn profile</li>
-            <li>A user can click a link to my twitter (follow me)</li>            
-            <li>A user can read a Definition of Done (DoD). Each sprint must fullfill the DoD prior to deployment.</li>            
-            <li>A user can read the build number next to the sprint increment (for clarification)</li>
-            <li>A user can read that the process now has more of a Kanban approach, rather than Scrum</li>
-            <li>A user is served minified JavaScript</li>
-            <li>A user is served minified CSS</li>
-          </ul>
-        <h3>Sprint 1 / Build 0001</h3>
-          <ul>
-            <li>A user can read an introduction on the purpose of the process</li>
-            <li>A user can click a humans TXT logo and read the humans.txt file</li>
-            <li>A user can find the source code on my github (github/davidlitmark)</li>
-            <li>A user can experience a very basic design and layout (to be improved)</li> 
-            <li>An admin can analyze the web traffic by using Google Analytics</li>           
-          </ul>
-        <h3>Sprint 0</h3>
-          <ul>
-            <li>The project is set up in Things</li>
-            <li>A set of goals and requirements are produced</li>
-            <li>The platform is decided upon</li>
-            <li>A work / build workflow is established</li>
-            <li>All domains are set up to point to one domain</li>
-            <li>A product backlog is produced</li>
+            <li>
+              <mark>Progressive enhancement</mark>
+            </li>
+            <li>Unobfuscated JavaScript</li>
+            <li>Responsive web design</li>
+            <li>
+              <mark>Mobile First</mark>
+            </li>
+            <li>Test driven developemnt (TDD)</li>
+            <li>Behavior driven development (BDD)</li>
+            <li>Modular Scale (modularscale.com)</li>
           </ul>
         </section>
+        <section>
+          <header>
+            <h2>Who am I?</h2>    
+          </header>
+          <p>A front-end developer / SharePoint developer currently employed by mogul (www.mogul.com). Disclaimer: This content does not necessarily reflect the opinions of my employer.</p>
+          <ul>
+            <li>
+              <a href="http://twitter.com/davidlitmark">Follow me on twitter: @davidlitmark</a>
+            </li>
+            <li>
+              <a href="http://se.linkedin.com/pub/david-litmark/2/347/670">Read my profile on LinkedIn</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <header>        
+            <h2>Completed Iterations</h2>
+          </header>
+          <h3>Sprint 4 / Build TBD</h3>
+            <ul>
+              <li>A user is served assets and layout styles progressively and only as they’re needed</li>
+            </ul> 
+          <h3>Sprint 3 / Build 0003</h3>
+            <ul>
+              <li>A user can find out about explored stuff (currently highlighted)</li>
+              <li>A user is served optimized images</li>
+              <li>A user can read user stories formulated according to the guidelines in <a href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685">User Stories Applied</a>.</li>
+            </ul>
+          <h3>Sprint 2 / Build 0002</h3>
+            <ul>
+              <li>A user can find the HTML5 logo on the site</li>            
+              <li>A user can click a link to my LinkedIn profile</li>
+              <li>A user can click a link to my twitter (follow me)</li>            
+              <li>A user can read a Definition of Done (DoD). Each sprint must fullfill the DoD prior to deployment.</li>            
+              <li>A user can read the build number next to the sprint increment (for clarification)</li>
+              <li>A user can read that the process now has more of a Kanban approach, rather than Scrum</li>
+              <li>A user is served minified JavaScript</li>
+              <li>A user is served minified CSS</li>
+            </ul>
+          <h3>Sprint 1 / Build 0001</h3>
+            <ul>
+              <li>A user can read an introduction on the purpose of the process</li>
+              <li>A user can click a humans TXT logo and read the humans.txt file</li>
+              <li>A user can find the source code on my github (github/davidlitmark)</li>
+              <li>A user can experience a very basic design and layout (to be improved)</li> 
+              <li>An admin can analyze the web traffic by using Google Analytics</li>           
+            </ul>
+          <h3>Sprint 0</h3>
+            <ul>
+              <li>The project is set up in Things</li>
+              <li>A set of goals and requirements are produced</li>
+              <li>The platform is decided upon</li>
+              <li>A work / build workflow is established</li>
+              <li>All domains are set up to point to one domain</li>
+              <li>A product backlog is produced</li>
+            </ul>
+          </section>
     </div>
-    <footer>
-      <a href="humans.txt">
-        <img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT" title="Humans TXT">
-      </a>
-      <a href="http://www.w3.org/html/logo/">
-        <img src="img/HTML5_Logo_64.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
-      </a>
-    </footer>
-  </div> <!--! end of #container -->
 
+    <div role="complementary">
+    </div>
 
-  <!-- JavaScript at the bottom for fast page loading -->
+  </div>
 
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
-
-
-  <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end scripts-->
-
-
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
-  <![endif]-->
-
+  <footer role="contentinfo" class="clearfix">
+    <a href="humans.txt">
+          <img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT" title="Humans TXT">
+        </a>
+    <a href="http://www.w3.org/html/logo/">
+      <img src="img/HTML5_Logo_64.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
+    </a>
+  </footer>
 
   <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
-   <script>
-    var _gaq=[["_setAccount","UA-22627911-2"],["_trackPageview"]];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-    s.parentNode.insertBefore(g,s)}(document,"script"));
-   </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+  <!-- Scripts -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+
+  <!--[if (lt IE 9) & (!IEMobile)]>
+  <script src="js/libs/DOMAssistantCompressed-2.8.js"></script>
+  <script src="js/libs/selectivizr-1.0.1.js"></script>
+  <script src="js/libs/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- http://t.co/HZe9oJ4 -->
+  <script>
+  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <noscript>Your browser does not support JavaScript!</noscript>
 
 </body>
 </html>

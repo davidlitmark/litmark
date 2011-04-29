@@ -1,8 +1,13 @@
-* {
-  float: none;       /* Screens are not big enough to account for floats */
-  background: #fff;  /*  As much contrast as possible */
-  color: #000;
-}
+/* Handheld
 
-/* Slightly reducing font size to reduce need to scroll */
-body { font-size: 80%; }
+_____________________________________________________
+
+320 and Up boilerplate extension
+
+Author: Andy Clarke
+Version: 0.9b
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT/
+_____________________________________________________
+
+*/
