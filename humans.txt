@@ -6,7 +6,7 @@
   Creator: David Litmark
   Site: davidlitmark.com / davidlitmark.se / litmark.se
   Twitter: @davidlitmark
-  Location: Gothenburg, Sweden
+  Location: Sweden
 
 /* THANKS */
   To you, for visiting the site. And, for reading this :)
