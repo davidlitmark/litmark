@@ -1,10 +1,15 @@
-/* _________________________________________________
+/* @import url(mylibs/forms.css); */
+
+/* 320
+
+_____________________________________________________
 
 320 and Up boilerplate extension
 
 Author: Andy Clarke
 Version: 0.9b
 URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT/
 _____________________________________________________
 
 1.ROOT
@@ -14,12 +19,12 @@ _____________________________________________________
 5.FIGURES & IMAGES
 6.TABLES
 7.FORMS (See css/mylibs/forms.css)
-8.BANNER header[role="banner"]
-9.NAVIGATION nav[role="navigation"]
+8.BANNER — header[role="banner"]
+9.NAVIGATION — nav[role="navigation"]
 10.CONTENT
-11.MAIN div[role="main"]
-12.COMPLIMENTARY div[role="complementary"]
-13.CONTENTINFO footer[role="contentinfo"]
+11.MAIN — div[role="main"]
+12.COMPLIMENTARY — div[role="complementary"]
+13.CONTENTINFO — footer[role="contentinfo"]
 14.GLOBAL OBJECTS
 15.VENDOR-SPECIFIC 
 16.TEMPLATE SPECIFICS
@@ -53,21 +58,79 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display : block; }
 
-abbr[title] { 
+blockquote, q { 
+quotes : none; }
+
+blockquote:before, 
+blockquote:after,
+q:before, 
+q:after { 
+content : ""; content: none; }
+
+del { 
+text-decoration : line-through; }
+
+ins { 
+background-color : rgb(255,255,153); 
+color : rgb(0,0,0); 
+text-decoration : none; }
+
+mark {
+background-color: rgba(23,119,175,0.2);
+color : rgb(0,0,0);
+}
+
+abbr[title], 
+dfn[title] { 
 border-bottom : 1px dotted; 
 cursor : help; }
+
+table { 
+border-collapse : collapse; 
+border-spacing : 0; }
+
+hr { 
+display : block; 
+height : 1px; 
+border : 0; 
+border-top : 1px solid rgb(204,204,204);
+margin : 1em 0; 
+padding : 0; }
+
+@font-face {
+    font-family: 'PTSerifCaptionRegular';
+    src: url('../fonts/PTZ55F-webfont.eot');
+    src: url('../fonts/PTZ55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTZ55F-webfont.woff') format('woff'),
+         url('../fonts/PTZ55F-webfont.ttf') format('truetype'),
+         url('../fonts/PTZ55F-webfont.svg#PTSerifCaptionRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSerifRegular';
+    src: url('../fonts/PTF55F-webfont.eot');
+    src: url('../fonts/PTF55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTF55F-webfont.woff') format('woff'),
+         url('../fonts/PTF55F-webfont.ttf') format('truetype'),
+         url('../fonts/PTF55F-webfont.svg#PTSerifRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* 1.ROOT */
 
 html {
 overflow-y : scroll;
-background : rgb(255,255,255) /* url(../img/tmp/grid.png) repeat-y 50% 0 */; }
+background: transparent url(../img/leather_bg.gif) repeat 0 0 ;
+}
 
 body { 
 margin : 0 auto;
 padding : 24px 0;
 width : 90% /* 252px */;
-font: 100 100%/1.4 "museo-1","museo-2", Cambria, Georgia, Times, "Times New Roman";
+font : 100%/1.4 PTSerifRegular, Cambria, Georgia, Times, "Times New Roman";
 color : rgb(40,40,40); 
 background-color : transparent; }
 
@@ -79,8 +142,8 @@ h3,
 h4, 
 h5, 
 h6 {
-font-family : "museo-sans-1","museo-sans-2", "Helvetica Neue", Helvetica, Arial;
-font-weight : 100; }
+font-family : PTSerifCaptionRegular, "Helvetica Neue", Helvetica, Arial;
+}
 
 h1 { 
 margin-bottom : .75em;
@@ -121,8 +184,7 @@ font-size : 1em; /* 16 / 16 = 1 */ }
 
 ul, 
 ol { 
-/*margin : 0 0 1.5em -24px; */
-margin : 0 0 1.5em 0px; 
+margin : 0 0 1.5em 0px;
 padding-left : 24px; }
 
 ul { 
@@ -144,7 +206,7 @@ dt {
 font-weight : normal; }
 
 blockquote  { 
-margin : 0 0 1.5em -24px; 
+margin : 0 0 1.5em 0px;
 padding-left : 24px; 
 border-left : 1px solid rgb(200,200,200);
 font-style : italic; }
@@ -157,7 +219,7 @@ content : '';
 content : none; }
 
 b, 
-strong  { 
+strong	{ 
 font-weight : bold; }
 
 i, 
@@ -226,6 +288,12 @@ figcaption {
 display : block;
 font-weight : normal; }
 
+ul img {
+vertical-align: middle;
+padding: 0.2em;
+}
+
+
 /* 6.TABLES */
 
 table { 
@@ -257,12 +325,6 @@ background-color : transparent; }
 #main { 
   padding: 2em; 
 }
-
-#stuff mark {
-  background-color: rgb(23,119,175);
-  color: rgb(250,250,250);
-}
-
 
 /* 12.COMPLIMENTARY */
 /* 13.CONTENTINFO */
@@ -385,169 +447,6 @@ list-style-type : none; }
 margin-bottom : 1.5em; }
 
 /* 17.MODERNIZR */
-
-/* MEDIA QUERIES */
-
-/*Print __________________________________________________________________________________________________________ */
-@media print {
-* { 
-background : transparent !important; 
-color : black !important; 
-text-shadow : none !important; 
-filter : none !important;
--ms-filter : none !important; } 
-
-a, a:visited { 
-color : #444 !important; 
-text-decoration : underline; }
-
-a[href]:after { 
-content : " (" attr(href) ")"; }
-
-abbr[title]:after { 
-content : " (" attr(title) ")"; }
-
-a[href^="javascript:"]:after, 
-a[href^="#"]:after { 
-content : ""; }
-  
-pre, blockquote { 
-border : 1px solid #999; 
-page-break-inside : avoid; }
-
-thead { 
-display : table-header-group; }
-
-tr, img { 
-page-break-inside : avoid; }
-
-@page { 
-margin : .5cm; }
-
-p, h2, h3 { 
-orphans : 3; 
-widows : 3; }
-
-h2, h3 { 
-page-break-after : avoid; }
-}/*/mediaquery*/
-
-/*480px __________________________________________________________________________________________________________ */
-@media only screen and (min-width: 480px) {
-
-/* 1.ROOT */
-/* 2.HEADINGS */
-/* 3.TYPOGRAPHY */
-/* 4.LINKS */
-/* 5.FIGURES & IMAGES */
-/* 6.TABLES */
-/* 7.FORMS */
-/* 8.BANNER */
-/* 9.NAVIGATION */
-/* 10.CONTENT */
-/* 11.MAIN */
-/* 12.COMPLIMENTARY */
-/* 13.CONTENTINFO */
-/* 14.GLOBAL OBJECTS */
-/* 15.VENDOR-SPECIFIC */
-/* 16.TEMPLATE SPECIFICS */
-/* 17.MODERNIZR */
-
-}/*/mediaquery*/
-
-/*768px __________________________________________________________________________________________________________ */
-@media only screen and (min-width: 768px) {
-
-/* 1.ROOT */
-
-/* 1.ROOT */
-/* 2.HEADINGS */
-/* 3.TYPOGRAPHY */
-/* 4.LINKS */
-/* 5.FIGURES & IMAGES */
-/* 6.TABLES */
-/* 7.FORMS */
-/* 8.BANNER */
-/* 9.NAVIGATION */
-/* 10.CONTENT */
-/* 11.MAIN */
-/* 12.COMPLIMENTARY */
-/* 13.CONTENTINFO */
-/* 14.GLOBAL OBJECTS */
-/* 15.VENDOR-SPECIFIC */
-/* 16.TEMPLATE SPECIFICS */
-/* 17.MODERNIZR */
-
-}/*/mediaquery*/
-
-/*992px __________________________________________________________________________________________________________ */
-@media only screen and (min-width: 992px) {
-
-/* 1.ROOT */
-/* 2.HEADINGS */
-/* 3.TYPOGRAPHY */
-/* 4.LINKS */
-/* 5.FIGURES & IMAGES */
-/* 6.TABLES */
-/* 7.FORMS */
-/* 8.BANNER */
-/* 9.NAVIGATION */
-/* 10.CONTENT */
-/* 11.MAIN */
-/* 12.COMPLIMENTARY */
-/* 13.CONTENTINFO */
-/* 14.GLOBAL OBJECTS */
-/* 15.VENDOR-SPECIFIC */
-/* 16.TEMPLATE SPECIFICS */
-/* 17.MODERNIZR */
-
-}/*/mediaquery*/
-
-/*1382px __________________________________________________________________________________________________________ */
-@media only screen and (min-width: 1382px) {
-
-/* 1.ROOT */
-/* 2.HEADINGS */
-/* 3.TYPOGRAPHY */
-/* 4.LINKS */
-/* 5.FIGURES & IMAGES */
-/* 6.TABLES */
-/* 7.FORMS */
-/* 8.BANNER */
-/* 9.NAVIGATION */
-/* 10.CONTENT */
-/* 11.MAIN */
-/* 12.COMPLIMENTARY */
-/* 13.CONTENTINFO */
-/* 14.GLOBAL OBJECTS */
-/* 15.VENDOR-SPECIFIC */
-/* 16.TEMPLATE SPECIFICS */
-/* 17.MODERNIZR */
-
-}/*/mediaquery*/
-
-/*2x __________________________________________________________________________________________________________ */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-
-/* 1.ROOT */
-/* 2.HEADINGS */
-/* 3.TYPOGRAPHY */
-/* 4.LINKS */
-/* 5.FIGURES & IMAGES */
-/* 6.TABLES */
-/* 7.FORMS */
-/* 8.BANNER */
-/* 9.NAVIGATION */
-/* 10.CONTENT */
-/* 11.MAIN */
-/* 12.COMPLIMENTARY */
-/* 13.CONTENTINFO */
-/* 14.GLOBAL OBJECTS */
-/* 15.VENDOR-SPECIFIC */
-/* 16.TEMPLATE SPECIFICS */
-/* 17.MODERNIZR */
-
-}/*/mediaquery*/
 
 /* 
 Sources: 
