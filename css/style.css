@@ -361,6 +361,10 @@ caption {
 /* 10.CONTENT */
 /* 11.MAIN */
 
+section {
+    margin-top: 4em;
+}
+
 #main {
     padding: 2em;
 }
