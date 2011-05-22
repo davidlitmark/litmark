@@ -41,6 +41,29 @@ _____________________________________________________
 /* 9.NAVIGATION */
 /* 10.CONTENT */
 /* 11.MAIN */
+
+
+#theidea .entry-content,
+#stuff .entry-content div,
+#theprocess .entry-content,
+#whoami .entry-content {
+    -moz-column-count: 2;
+    -moz-column-gap: 80px;
+    -moz-column-rule: 1px solid rgba(23, 119, 175, 0.2);
+    -webkit-column-count: 2;
+    -webkit-column-gap: 80px;
+    -webkit-column-rule: 1px solid rgba(23, 119, 175, 0.2);
+    column-count: 2;
+    column-gap: 80px;
+    column-rule: 1px solid rgba(23, 119, 175, 0.2);
+}
+
+.sidenote {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
 /* 12.COMPLIMENTARY */
 /* 13.CONTENTINFO */
 /* 14.GLOBAL OBJECTS */
