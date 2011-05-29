@@ -79,6 +79,10 @@ _____________________________________________________
     column-rule: 1px solid rgba(23, 119, 175, 0.2);
 }
 
+#whoami ul {
+    height: 120px;
+}
+
 
 /* 12.COMPLIMENTARY */
 /* 13.CONTENTINFO */
