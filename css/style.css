@@ -369,8 +369,6 @@ section {
     padding: 2em;
 }
 
-
-
 #whoami ul {
     list-style: none;
     padding-left: 0;
@@ -381,6 +379,58 @@ section {
     padding: 1em;
 }
 
+#zootool-badge {
+    width: 100%;
+    line-height: 0px;
+    overflow: hidden;
+}
+
+#zootool-badge img {
+    border: 0px;
+    padding: 0px;
+}
+
+#zootool-badge ul {
+    width: 100% px;
+    margin: 0px;
+    padding: 5px;
+}
+
+#zootool-badge li {
+    float: left;
+    width: 75px;
+    list-style: none;
+    margin: 5px;
+    border: 1px solid #9e9e9e;
+    padding: 1px;
+    background: #fff;
+    -webkit-box-shadow: #d4d4d4 0px 0px 5px;
+    -moz-box-shadow: #d4d4d4 0px 0px 5px;
+}
+
+
+.twtr-hd,
+.twtr-ft {
+    display: none;
+}
+
+.twtr-widget p {
+    font-family: PTSerifRegular, Cambria, Georgia, Times, "Times New Roman" !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+.twtr-widget p em {
+    font-size: 16px !important;
+}
+
+.twtr-tweet-wrap {
+    padding: 1em 8px !important;
+}
+
+.twtr-tweet:not(:last-child) .twtr-tweet-wrap {
+    border-bottom: 2px dashed silver;
+}
 
 /* 12.COMPLIMENTARY */
 /* 13.CONTENTINFO */

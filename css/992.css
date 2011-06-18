@@ -79,8 +79,9 @@ _____________________________________________________
     column-rule: 1px solid rgba(23, 119, 175, 0.2);
 }
 
-#whoami ul {
-    height: 120px;
+#whoami ul,
+#whoami .entry-content > p {
+    height: 152px;
 }
 
 

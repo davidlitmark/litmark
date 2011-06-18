@@ -88,6 +88,9 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
             <li><a href="#dod">Definition of done</a></li>
             <li><a href="#stuff">Stuff to consider</a></li>
             <li><a href="#whoami">Who am I?</a></li>
+            <li><a href="#blogpost">Featured blog post</a></li>
+            <li><a href="#tweets">Most recent tweets</a></li>
+            <li><a href="#zootool">Most recent bookmarks</a></li>
             <li><a href="#completediterations">Completed iterations</a></li>
             <li><a href="http://blog.davidlitmark.com">To the blog (external)</a></li>
         </ul>
@@ -241,9 +244,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
     <header>
         <h2>Who am I?</h2>
     </header>
-    <div class="entry-content"><p>A front-end developer / SharePoint developer currently employed by mogul
-        (www.mogul.com). Disclaimer:
-        This content does not necessarily reflect the opinions of my employer.</p>
+    <div class="entry-content"><p>A front-end developer / SharePoint developer currently employed by <a href="http://www.mogul.com">mogul</a>. Disclaimer: This content does not necessarily reflect the opinions of my employer.</p>
         <ul>
             <li>
                 <a href="http://twitter.com/davidlitmark">
@@ -263,14 +264,65 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
                     Read my blog
                 </a>
             </li>
+            <li>
+                <a href="http://zootool.com/user/davidlitmark">
+                    <img src="img/zootool_32.png">
+                    Check out the zoo
+                </a>
+            </li>
         </ul>
     </div>
 </section>
+<section id="tweets">
+    <header>
+        <h2>Most recent tweets</h2>
+    </header>
+    <div class="entry-content">
+        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+        new TWTR.Widget({
+          version: 2,
+          type: 'profile',
+          rpp: 4,
+          interval: 6000,
+          width: 'auto',
+          height: 300,
+          theme: {
+            shell: {
+              background: 'transparent',
+              color: '#ffffff'
+            },
+            tweets: {
+              background: 'transparent',
+              color: '#282828',
+              links: '#1777af'
+            }
+          },
+          features: {
+            scrollbar: false,
+            loop: false,
+            live: false,
+            hashtags: true,
+            timestamp: true,
+            avatars: false,
+            behavior: 'all'
+          }
+        }).render().setUser('davidlitmark').start();
+        </script>
+    </div>
+</section>
+
 <section id="completediterations">
     <header>
         <h2>Completed iterations</h2>
     </header>
     <div class="entry-content">
+        <h3>Sprint 10 / Build 0011</h3>
+        <ul>
+            <li>A visitor can find my latest bookmarks</li>
+            <li>A visitor can read my latest tweets</li>
+            <li>A visitor can view a social media icon for zootool</li>
+        </ul>
         <h3>Sprint 9 / Build 0009</h3>
         <ul>
             <li>A visitor can read an introduction to a featured blog post</li>
@@ -376,6 +428,8 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 
 </div>
 
+
+
 <footer role="contentinfo" class="clearfix">
     <a href="humans.txt">
         <img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT" title="Humans TXT">
@@ -395,17 +449,25 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
 
-
-<script type="text/javascript">
-    // TODO: refactor to external js
-
-</script>
-
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="js/libs/DOMAssistantCompressed-2.8.js"></script>
 <script src="js/libs/selectivizr-1.0.1.js"></script>
 <script src="js/libs/respond.min.js"></script>
 <![endif]-->
+
+
+<div id="zootool-badge">
+  
+</div>
+
+<script>
+//    (function(d, t) {
+//        var zb = d.createElement(t),s = d.getElementsByTagName(t)[0];
+//        zb.async = 1;
+//        zb.src = 'http://zootool.com/badge/davidlitmark/?count=10&size=75';
+//        s.parentNode.insertBefore(zb, s)
+//    }(document, 'script'));
+</script>
 
 <!-- http://t.co/HZe9oJ4 -->
 <script>
