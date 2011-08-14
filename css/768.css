@@ -58,11 +58,11 @@ _____________________________________________________
     column-rule: 1px solid rgba(23, 119, 175, 0.2);
 }
 
-.sidenote {
-    -moz-transform: rotate(5deg);
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
-}
+/*.sidenote {*/
+    /*-moz-transform: rotate(5deg);*/
+    /*-webkit-transform: rotate(5deg);*/
+    /*transform: rotate(5deg);*/
+/*}*/
 
 /* 12.COMPLIMENTARY */
 /* 13.CONTENTINFO */

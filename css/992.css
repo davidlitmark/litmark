@@ -42,17 +42,17 @@ _____________________________________________________
 /* 10.CONTENT */
 /* 11.MAIN */
 
-#theidea .entry-content {
-    -moz-column-count: 4;
-    -moz-column-gap: 80px;
-    -moz-column-rule: 1px solid rgba(23, 119, 175, 0.2);
-    -webkit-column-count: 4;
-    -webkit-column-gap: 80px;
-    -webkit-column-rule: 1px solid rgba(23, 119, 175, 0.2);
-    column-count: 4;
-    column-gap: 80px;
-    column-rule: 1px solid rgba(23, 119, 175, 0.2);
-}
+/*#theidea .entry-content {*/
+    /*-moz-column-count: 4;*/
+    /*-moz-column-gap: 80px;*/
+    /*-moz-column-rule: 1px solid rgba(23, 119, 175, 0.2);*/
+    /*-webkit-column-count: 4;*/
+    /*-webkit-column-gap: 80px;*/
+    /*-webkit-column-rule: 1px solid rgba(23, 119, 175, 0.2);*/
+    /*column-count: 4;*/
+    /*column-gap: 80px;*/
+    /*column-rule: 1px solid rgba(23, 119, 175, 0.2);*/
+/*}*/
 
 #stuff .entry-content div,
 #theprocess .entry-content {

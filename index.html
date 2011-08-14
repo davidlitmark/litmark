@@ -31,10 +31,11 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
     <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
 
     <!-- For less capable mobile browsers
-<link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+    <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
 
     <!-- For all browsers -->
     <link rel="stylesheet" media="screen" href="css/style.css?v=1">
+
     <link rel="stylesheet" media="print" href="css/print.css?v=1">
     <!-- For progressively larger displays -->
     <link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css?v=1">
@@ -49,6 +50,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 
     <!-- JavaScript -->
     <script src="js/libs/modernizr-1.7.min.js"></script>
+    <script src="js/libs/less-1.1.3.min.js"></script>
 
 
     <!-- For iPhone 4 -->
@@ -80,19 +82,19 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 <header role="banner" class="clearfix">
     <h1>David Litmark</h1>
 
-    <h2>Contents</h2>
-    <nav>
+
+    <nav role="navigation">
+        <h2>Contents</h2>
         <ul>
-            <li><a href="#theidea">The idea</a></li>
-            <li><a href="#theprocess">The process</a></li>
-            <li><a href="#dod">Definition of done</a></li>
-            <li><a href="#stuff">Stuff to consider</a></li>
+            <li><a href="#theidea">The Idea</a></li>
+            <li><a href="#theprocess">The Process</a></li>
+            <li><a href="#dod">Definition of Done</a></li>
+            <li><a href="#stuff">Stuff to Consider</a></li>
             <li><a href="#whoami">Who am I?</a></li>
-            <li><a href="#blogpost">Featured blog post</a></li>
-            <li><a href="#tweets">Most recent tweets</a></li>
-            <li><a href="#zootool">Most recent bookmarks</a></li>
-            <li><a href="#completediterations">Completed iterations</a></li>
-            <li><a href="http://blog.davidlitmark.com">To the blog (external)</a></li>
+            <!--<li><a href="#blogpost">Featured Blog Post</a></li>-->
+            <li><a href="#tweets">Most Recent Tweets</a></li>
+            <li><a href="#zootool">Most Recent Bookmarks</a></li>
+            <li><a href="#completediterations">Version History (completed iterations)</a></li>
         </ul>
     </nav>
 </header>
@@ -101,9 +103,18 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 <div class="content clearfix">
 
 <div role="main">
+<section id="featurette">
+    <header>
+        <h2>What's new?</h2>
+    </header>
+    <div class="entry-content">
+    </div>
+</section>
+
+
 <section id="theidea">
     <header>
-        <h2>The idea</h2>
+        <h2>The Idea</h2>
     </header>
     <div class="entry-content">
         <h3>What is this?</h3>
@@ -124,9 +135,11 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
         <p>Who knows? That said, I do have a direction and a bunch of requirements. But hey, since this is an agile
             process they may change over time.</p></div>
 </section>
+
+
 <section id="theprocess">
     <header>
-        <h2>The process</h2>
+        <h2>The Process</h2>
     </header>
     <div class="entry-content">
         <ol>
@@ -140,29 +153,32 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
                 The result from the previous sprint is archived (for example, to find the site from sprint 1 use the
                 following URL: /sprint/1).
             <li>The most recent sprint backlog is added to the site.</li>
-            <li>The new release is announced on twitter <a href="http://twitter.com/davidlitmark">(follow
+            <li>The new release is announced on twitter <a href="http://twitter.com/davidlitmark" rel="external me">(follow
                 @davidlitmark).</a></li>
         </ol>
         <br/>
 
-        <p class="sidenote"><sup>*</sup> This is a modification compared to the first sprint that had more of a Scrum
+        <p class="sidenote"><sup>*</sup> This is a modification compared to the first sprint that had more of a
+            Scrum
             approach
             whereas this process is more influenced by Kanban, and more suitable since the available hours each week
             are unknown in advance.</p></div>
 </section>
 <section id="dod">
     <header>
-        <h2>Definition of done</h2>
+        <h2>Definition of Done</h2>
     </header>
     <div class="entry-content"><p>These requirements must be fulfilled each sprint.</p>
         <ol>
-            <li>The html must validate (HTML5)</li>
+            <li>The html validates (HTML5)</li>
+            <li>The site appears and behaves as intended in the latest version of chrome on a mac running osx lion. Here's why: The timeboxing for each sprint does not permit testing on each platform and on a variety of browsers (or devices). You will probably be able to browse the site but it may look like absolute sh**e. If it does it obviously will be fixed sometime, but not until I get around to it.</li>
         </ol>
     </div>
 </section>
+
 <section id="stuff">
     <header>
-        <h2>Stuff to consider</h2>
+        <h2>Stuff to Consider</h2>
     </header>
     <div class="entry-content">
         <p>Explored stuff is
@@ -170,7 +186,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
             .
         </p>
 
-        <h3>Tech. stuff</h3>
+        <h3>Tech. Stuff</h3>
 
         <div>
             <ul>
@@ -184,12 +200,17 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
                     <mark>Typekit</mark>
                 </li>
                 <li>Treesaver</li>
-                <li>Less CSS</li>
+                <li>
+                    <mark>{less}</mark>
+                </li>
                 <li>
                     <mark>html5 boilerplate</mark>
                 </li>
                 <li>underscore</li>
                 <li>Less Framework</li>
+                <li>
+                    <mark>lettering JS</mark>
+                </li>
                 <li>Modernizr</li>
                 <li>YepNope</li>
                 <li>
@@ -197,6 +218,9 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
                 </li>
                 <li>qUnit</li>
                 <li>Jasmine</li>
+                <li>
+                    <mark>WAI-ARIA</mark>
+                </li>
                 <li>jQuery Mobile</li>
                 <li>Node</li>
                 <li>headjs</li>
@@ -204,7 +228,6 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
                     <mark>320 and Up</mark>
                 </li>
                 <li>pavlov</li>
-                <li>Spine</li>
                 <li>
                     <mark>Web fonts</mark>
                 </li>
@@ -217,9 +240,12 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
                 <li>
                     <mark>FeedBurner</mark>
                 </li>
+                <li>
+                    tempojs
+                </li>
             </ul>
         </div>
-        <h3>Misc. stuff</h3>
+        <h3>Misc. Stuff</h3>
 
         <div>
             <ul>
@@ -240,187 +266,281 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
         </div>
     </div>
 </section>
+
+<section id="tweets">
+    <header>
+        <h2>Most Recent Tweets</h2>
+    </header>
+    <div class="entry-content">
+        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+        <script>
+            new TWTR.Widget({
+                version: 2,
+                type: 'profile',
+                rpp: 4,
+                interval: 6000,
+                width: 'auto',
+                height: 300,
+                theme: {
+                    shell: {
+                        background: 'transparent',
+                        color: '#ffffff'
+                    },
+                    tweets: {
+                        background: 'transparent',
+                        color: '#282828',
+                        links: '#1777af'
+                    }
+                },
+                features: {
+                    scrollbar: false,
+                    loop: false,
+                    live: false,
+                    hashtags: true,
+                    timestamp: true,
+                    avatars: false,
+                    behavior: 'all'
+                }
+            }).render().setUser('davidlitmark').start();
+        </script>
+    </div>
+</section>
+
 <section id="whoami">
     <header>
         <h2>Who am I?</h2>
     </header>
-    <div class="entry-content"><p>A front-end developer / SharePoint developer currently employed by <a href="http://www.mogul.com">mogul</a>. Disclaimer: This content does not necessarily reflect the opinions of my employer.</p>
+    <div class="entry-content">
+        <p>A front-end developer / SharePoint developer currently employed by <a href="http://www.mogul.com"
+                                                                                 rel="external"
+                                                                                 title="Click to visit the mogul website">mogul</a>.
+            Disclaimer: This content does not necessarily reflect the
+            opinions of my employer.</p>
         <ul>
             <li>
-                <a href="http://twitter.com/davidlitmark">
-                    <img src="img/twitter_32.png">
+                <a href="http://twitter.com/davidlitmark" rel="external me">
+                    <img src="img/twitter_32.png" alt=""/>
                     Follow me on twitter: @davidlitmark
                 </a>
             </li>
             <li>
-                <a href="http://se.linkedin.com/pub/david-litmark/2/347/670">
-                    <img src="img/linkedin_32.png">
+                <a href="http://se.linkedin.com/pub/david-litmark/2/347/670" rel="external me author">
+                    <img src="img/linkedin_32.png" alt="">
                     Read my profile on LinkedIn
                 </a>
             </li>
             <li>
-                <a href="http://blog.davidlitmark.com">
-                    <img src="img/tumblr_32.png">
-                    Read my blog
-                </a>
-            </li>
-            <li>
-                <a href="http://zootool.com/user/davidlitmark">
-                    <img src="img/zootool_32.png">
+                <a href="http://zootool.com/user/davidlitmark" rel="external me">
+                    <img src="img/zootool_32.png" alt="">
                     Check out the zoo
                 </a>
             </li>
         </ul>
     </div>
 </section>
-<section id="tweets">
-    <header>
-        <h2>Most recent tweets</h2>
-    </header>
-    <div class="entry-content">
-        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-        <script>
-        new TWTR.Widget({
-          version: 2,
-          type: 'profile',
-          rpp: 4,
-          interval: 6000,
-          width: 'auto',
-          height: 300,
-          theme: {
-            shell: {
-              background: 'transparent',
-              color: '#ffffff'
-            },
-            tweets: {
-              background: 'transparent',
-              color: '#282828',
-              links: '#1777af'
-            }
-          },
-          features: {
-            scrollbar: false,
-            loop: false,
-            live: false,
-            hashtags: true,
-            timestamp: true,
-            avatars: false,
-            behavior: 'all'
-          }
-        }).render().setUser('davidlitmark').start();
-        </script>
-    </div>
-</section>
 
 <section id="completediterations">
     <header>
-        <h2>Completed iterations</h2>
+        <h2>Version History completed iterations</h2>
     </header>
     <div class="entry-content">
-        <h3>Sprint 10 / Build 0011</h3>
-        <ul>
-            <li>A visitor can find my latest bookmarks</li>
-            <li>A visitor can read my latest tweets</li>
-            <li>A visitor can view a social media icon for zootool</li>
-        </ul>
-        <h3>Sprint 9 / Build 0009</h3>
-        <ul>
-            <li>A visitor can read an introduction to a featured blog post</li>
-            <li>A visitor can navigate to the featured blog post by clicking on its title</li>
-            <li>A visitor to the blog can sign in before posting comments</li>
-            <li>A visitor to the blog can read social media reactions for a post from other services around the web</li>
-            <li>A visitor to the blog can mention others users within a post</li>
-            <li>A visitor to the blog can automatically reply by twitter when sharing replies to comments</li>
-        </ul>
-        <h3>Sprint 8 / Build 0008</h3>
-        <ul>
-            <li>A visitor can read blog posts at <a href="http://blog.davidlitmark.com">blog.davidlitmark.com</a></li>
-            <li>A visitor to the blog can comment on posts (DISQUS)</li>
-            <li>A visitor to the blog can read my latest tweets</li>
-            <li>A visitor to the blog can subscribe to posts (FeedBurner)</li>
-            <li>A visitor to the blog can read syntax highlighted JavaScript</li>
-            <li>A visitor to the blog can experience a very basic design and layout based on the tumblr default theme
-                (to be customized further)
-            </li>
-            <li>A visitor can click a link to the blog, both from the contents section and the who-am-i section</li>
-            <li>A visitor can view a social media icon for tumblr</li>
-            <li>A visitor can read <i>visitor</i> instead of <i>user</i> in the description of user stories (for
-                clarification)
-            </li>
-        </ul>
-        <h3>Sprint 7 / Build 0007</h3>
-        <ul>
-            <li>A visitor can experience a background texture reminiscent of leather (thnx <a
-                    href="http://twitter.com/karllofholm">@karllofholm</a> for the tip)
-            </li>
-            <li>A visitor can experience columns, based on screen width (css3 columns and media queries)</li>
-            <li>A visitor can experience rotated content (css3 transform)</li>
-        </ul>
-        <h3>Sprint 6 / Build 0006</h3>
-        <ul>
-            <li>A visitor can read headlines and text in web fonts PTSerifCaptionRegular and PTSerifRegular,
-                respectively
-            </li>
-            <li>A visitor can navigate the page using a table of contents, linking to each section</li>
-            <li>A visitor can experience a yellow tiled background texture, reminiscent of fabrics</li>
-            <li>A visitor can view social media icons for linkedin and twitter</li>
-            <li>A visitor can read an attribution to Komodo media, for the use of the social media icons (licensed
-                under Creative Commons Attribution-Share Alike 3.0 Unported License)
-            </li>
-        </ul>
-        <h3>Sprint 5 / Build 0005</h3>
-        <ul>
-            <li>A visitor can read headlines and text in web fonts Museo Sans and Museo, respectively (served from
-                Typekit)
-            </li>
-        </ul>
-        <h3>Sprint 4 / Build 0004</h3>
-        <ul>
-            <li>A visitor is served assets and layout styles progressively and only as they’re needed (320 and Up)</li>
-            <li>A visitor can experience a very basic design and layout based on the 320 and Up default styles (to be
-                improved)
-            </li>
-        </ul>
-        <h3>Sprint 3 / Build 0003</h3>
-        <ul>
-            <li>A visitor can find out about explored stuff (currently highlighted)</li>
-            <li>A visitor is served optimized images</li>
-            <li>A visitor can read user stories formulated according to the guidelines in <a
-                    href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685">User
-                Stories Applied</a>.
-            </li>
-        </ul>
-        <h3>Sprint 2 / Build 0002</h3>
-        <ul>
-            <li>A visitor can view the HTML5 logo</li>
-            <li>A visitor can click a link to my LinkedIn profile</li>
-            <li>A visitor can click a link to my twitter (follow me)</li>
-            <li>A visitor can read a Definition of Done (DoD). Each sprint must fulfill the DoD prior to deployment
-            </li>
-            <li>A visitor can read the build number next to the sprint increment (for clarification)</li>
-            <li>A visitor can read that the process now has more of a Kanban approach, rather than Scrum</li>
-            <li>A visitor is served minified JavaScript</li>
-            <li>A visitor is served minified CSS</li>
-        </ul>
-        <h3>Sprint 1 / Build 0001</h3>
-        <ul>
-            <li>A visitor can read an introduction on the purpose of the process</li>
-            <li>A visitor can click a humans TXT logo and read the humans.txt file</li>
-            <li>A visitor can find the source code on my github (github/davidlitmark)</li>
-            <li>A visitor can experience a very basic design and layout (to be improved)</li>
-            <li>An administrator can analyze the web traffic by using Google Analytics</li>
-        </ul>
-        <h3>Sprint 0</h3>
-        <ul>
-            <li>The project is set up in Things</li>
-            <li>A set of goals and requirements are produced</li>
-            <li>The platform is decided upon</li>
-            <li>A work / build workflow is established</li>
-            <li>All domains are set up to point to one domain</li>
-            <li>A product backlog is produced</li>
-        </ul>
+        <article role="article">
+            <header><h3>Sprint 15 / Build 0017</h3></header>
+            <ul>
+                <li>Added a gradient background to all circles</li>
+                <li>Added a text shadow to each version title</li>
+                <li>Added a fading brush stroke background to each version title</li>
+                <li>Nested a bunch of CSS rules</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 14 / Build 0016</h3></header>
+            <ul>
+                <li>Transformed all the items in the "Version history" section to circles with text on top</li>
+                <li>Aligned the contents in the "What's new", "Version history" and footer sections relative to the center</li>
+                <li>Decreased the page width</li>
+                <li>Rearranged the content</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 13 / Build 0014</h3></header>
+            <ul>
+                <li>Added the "What's new?" section. This section includes all modifications to the latest release</li>
+                <li>Added a browser disclaimer to the definition of done</li>
+                <li>Reorganized the content flow</li>
+                <li>Removed the table of contents</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 12 / Build 0013</h3></header>
+            <ul>
+                <li>{less} is now used for generating all the CSS</li>
+                <li>Increased the size of the title and centered it horizontally</li>
+                <li>Added text shadows to headings</li>
+                <li>Added rotation to all headings, just for the fun of it</li>
+                <li>Replaced the leather with paper</li>
+                <li>Updated humans TXT</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 11 / Build 0012</h3></header>
+            <ul>
+                <li>Added the Pomodoro badge, linked to the Pomodoro Technique web site</li>
+                <li>Added the WebStorm link logo, linked to the Jet Brain's WebStorm web site</li>
+                <li>Added article elements where appropriate</li>
+                <li>Added HTML5 link relationships</li>
+                <li>Added XFN microformat to links</li>
+                <li>Added WAI-ARIA roles</li>
+                <li>Added typography styles for most of the headers. Experimental.</li>
+                <li>Added measurements for the modular scale to the CSS, based on the numbers 16 and 82</li>
+                <li>Modified the body width to align to the grid</li>
+                <li>Removed css transforms from sidenote in the "The Process" section</li>
+                <li>Removed four columns layout from the "The Idea" section</li>
+                <li>Decided not to write every update on the form "A visitor ..."</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 10 / Build 0011</h3></header>
+            <ul>
+                <li>A visitor can view my latest bookmarks</li>
+                <li>A visitor can read my latest tweets</li>
+                <li>A visitor can view a social media icon for zootool</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 9 / Build 0009</h3></header>
+            <ul>
+                <li>A visitor can read an introduction to a featured blog post</li>
+                <li>A visitor can navigate to the featured blog post by clicking on its title</li>
+                <li>A visitor to the blog can sign in before posting comments</li>
+                <li>A visitor to the blog can read social media reactions for a post from other services around the
+                    web
+                </li>
+                <li>A visitor to the blog can mention others users within a post</li>
+                <li>A visitor to the blog can automatically reply by twitter when sharing replies to comments</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 8 / Build 0008</h3></header>
+            <ul>
+                <li>A visitor can read blog posts at <a
+                        href="http://blog.davidlitmark.com" rel="external">blog.davidlitmark.com</a></li>
+                <li>A visitor to the blog can comment on posts (DISQUS)</li>
+                <li>A visitor to the blog can read my latest tweets</li>
+                <li>A visitor to the blog can subscribe to posts (FeedBurner)</li>
+                <li>A visitor to the blog can read syntax highlighted JavaScript</li>
+                <li>A visitor to the blog can experience a very basic design and layout based on the tumblr default
+                    theme
+                    (to be customized further)
+                </li>
+                <li>A visitor can click a link to the blog, both from the contents section and the who-am-i
+                    section
+                </li>
+                <li>A visitor can view a social media icon for tumblr</li>
+                <li>A visitor can read <i>visitor</i> instead of <i>user</i> in the description of user stories (for
+                    clarification)
+                </li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 7 / Build 0007</h3></header>
+            <ul>
+                <li>A visitor can experience a background texture reminiscent of leather (thnx <a
+                        href="http://twitter.com/karllofholm" rel="external">@karllofholm</a> for the tip)
+                </li>
+                <li>A visitor can experience columns, based on screen width (css3 columns and media queries)</li>
+                <li>A visitor can experience rotated content (css3 transform)</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 6 / Build 0006</h3></header>
+            <ul>
+                <li>A visitor can read headlines and text in web fonts PTSerifCaptionRegular and PTSerifRegular,
+                    respectively
+                </li>
+                <li>A visitor can navigate the page using a table of contents, linking to each section</li>
+                <li>A visitor can experience a yellow tiled background texture, reminiscent of fabrics</li>
+                <li>A visitor can view social media icons for linkedin and twitter</li>
+                <li>A visitor can read an attribution to Komodo media, for the use of the social media icons
+                    (licensed
+                    under Creative Commons Attribution-Share Alike 3.0 Unported License)
+                </li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 5 / Build 0005</h3></header>
+            <ul>
+                <li>A visitor can read headlines and text in web fonts Museo Sans and Museo, respectively (served
+                    from
+                    Typekit)
+                </li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 4 / Build 0004</h3></header>
+            <ul>
+                <li>A visitor is served assets and layout styles progressively and only as they’re needed (320 and
+                    Up)
+                </li>
+                <li>A visitor can experience a very basic design and layout based on the 320 and Up default styles
+                    (to be
+                    improved)
+                </li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 3 / Build 0003</h3></header>
+            <ul>
+                <li>A visitor can find out about explored stuff (currently highlighted)</li>
+                <li>A visitor is served optimized images</li>
+                <li>A visitor can read user stories formulated according to the guidelines in <a
+                        href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685"
+                        rel="external">User
+                    Stories Applied</a>
+                </li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 2 / Build 0002</h3></header>
+            <ul>
+                <li>A visitor can view the HTML5 logo</li>
+                <li>A visitor can click a link to my LinkedIn profile</li>
+                <li>A visitor can click a link to my twitter (follow me)</li>
+                <li>A visitor can read a Definition of Done (DoD). Each sprint must fulfill the DoD prior to
+                    deployment
+                </li>
+                <li>A visitor can read the build number next to the sprint increment (for clarification)</li>
+                <li>A visitor can read that the process now has more of a Kanban approach, rather than Scrum</li>
+                <li>A visitor is served minified JavaScript</li>
+                <li>A visitor is served minified CSS</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 1 / Build 0001</h3></header>
+            <ul>
+                <li>A visitor can read an introduction on the purpose of the process</li>
+                <li>A visitor can click a humans TXT logo and read the humans.txt file</li>
+                <li>A visitor can find the source code on my github (github/davidlitmark)</li>
+                <li>A visitor can experience a very basic design and layout (to be improved)</li>
+                <li>An administrator can analyze the web traffic by using Google Analytics</li>
+            </ul>
+        </article>
+        <article role="article">
+            <header><h3>Sprint 0</h3></header>
+            <ul>
+                <li>The project is set up in Things</li>
+                <li>A set of goals and requirements are produced</li>
+                <li>The platform is decided upon</li>
+                <li>A work / build workflow is established</li>
+                <li>All domains are set up to point to one domain</li>
+                <li>A product backlog is produced</li>
+            </ul>
+        </article>
     </div>
 </section>
+
+
+
 </div>
 
 <div role="complementary">
@@ -429,23 +549,31 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 </div>
 
 
-
 <footer role="contentinfo" class="clearfix">
-    <a href="humans.txt">
-        <img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT" title="Humans TXT">
-    </a>
-    <a href="http://www.w3.org/html/logo/">
-        <img src="img/HTML5_Logo_64.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
-    </a>
-
-    <p>Social Network Icons by <a href="http://www.komodomedia.com/">Komodo Media</a></p>
+    <a href="humans.txt"><img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT"
+                              title="Click to read the Humans TXT"></a>
+    <a href="http://www.w3.org/html/logo/" rel="external"><img src="img/HTML5_Logo_64.png" width="64" height="64"
+                                                               alt="This site is HTML5 powered"
+                                                               title="This site is HTML5 powered"></a>
+    <a href="http://www.pomodorotechnique.com" rel="external"><img height="60" width="120" src="img/pomodoro.png"
+                                                                   alt="I Use the Pomodoro Technique"
+                                                                   title="Click to read more about the Pomodoro Technique"/></a>
+    <a href="http://www.jetbrains.com/webstorm/"
+       style="position: relative;display:inline-block; width:127px; height:37px; border:0; margin:0;padding:0;text-decoration:none;text-indent:0;"
+       rel="external" title="Click to read more about WebStorm"><span
+            style="margin: 0;padding: 0;position: absolute;top: 2px;left: 33px;font-size: 10px;cursor:pointer;  background-image:none;border:0;color: #0281b6; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Proud user of</span><img
+            src="http://www.jetbrains.com/webstorm/documentation/webstorm_banners/webstorm1/webstorm125x37_white.gif"
+            alt="Proud user of WebStorm" border="0"/></a>
+    <a href="http://www.komodomedia.com/" rel="external"><p>Social Network Icons by Komodo Media</p></a>
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+
 <!-- Scripts -->
-<!-- read json from tumblr-->
-<script src="http://blog.davidlitmark.com/api/read/json"></script>
+<script src="js/libs/jquery.lettering-0.6.1.min.js"></script>
+
+<!-- own scripts -->
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
 
@@ -456,18 +584,8 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 <![endif]-->
 
 
-<div id="zootool-badge">
-  
-</div>
+<!--<div id="zootool-badge"></div>-->
 
-<script>
-//    (function(d, t) {
-//        var zb = d.createElement(t),s = d.getElementsByTagName(t)[0];
-//        zb.async = 1;
-//        zb.src = 'http://zootool.com/badge/davidlitmark/?count=10&size=75';
-//        s.parentNode.insertBefore(zb, s)
-//    }(document, 'script'));
-</script>
 
 <!-- http://t.co/HZe9oJ4 -->
 <script>

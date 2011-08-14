@@ -9,47 +9,50 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 }
 
 
-(function () {
-    // read blog posts from tumblr
-// very temporary code. TODO: Refactor into module
-var tumblr = tumblr_api_read;
-var latestPost = tumblr.posts[0];
-var regularTitle = latestPost['regular-title'];
-var url = latestPost.url;
-var tag = latestPost.tags[0];
-var regularBody = latestPost['regular-body'].substring(0, 300) + " ...";
-
-//    function getTags(arr){
-//        for(var i=0, j = arr.length; i<j;i++){
-//            s += arr[i];
-//        }
-//    }
-
-    // TODO: Add tags to blog posts
-    //<p><b>' + tag + '</b></p>
-
-$("#whoami").after('' +
-        '<section id="blogpost">' +
-        '   <header><h2>Featured Blog Post</h2></header>' +
-        '   <div class="entry-content">' +
-        '       <h3><a href="' + url + '" >' + regularTitle + '</a></h3><p>' + regularBody + '</p>' +
-        '   </div>' +
-        '</section>');
-}());
-
-
 // zootools
 // TODO: Refactor!
 // TODO: zb included twice below?
-    (function(d, t) {
-        var zb = d.createElement(t),s = d.getElementsByTagName(t)[0];
-        zb.async = 1;
-        zb.src = 'http://zootool.com/badge/davidlitmark/?count=10&size=75';
-s.parentNode.insertBefore(zb, s);
-        $("#tweets").after('' +
+(function(d, t) {
+    var zb = d.createElement(t),s = d.getElementsByTagName(t)[0];
+    zb.async = 1;
+    zb.src = 'http://zootool.com/badge/davidlitmark/?count=10&size=75';
+    s.parentNode.insertBefore(zb, s);
+    $("#tweets").after('' +
         '<section id="zootool">' +
-        '   <header><h2>Most recent bookmarks</h2></header>' +
+        '   <header><h2>Most Recent Bookmarks</h2></header>' +
         '   <div class="entry-content"><div id="zootool-badge"> ' + zb + '</div></div>' +
         '</section>');
-        
-    }(document, 'script'));
+
+}(document, 'script'));
+
+jQuery(document).ready(function() {
+
+//lettering - headers
+    $('#theidea h2, #theprocess h2').lettering('words').children('.word1').lettering();
+    $('#dod h2, #stuff h2, #whoami h2, #tweets h2, #zootool h2, #completediterations h2').lettering('words');
+
+// what's new
+    $("#featurette .entry-content")
+        .load("index.html #completediterations article:eq(0) ul", function() {
+            $("#featurette li").each(makeSameSize);
+        });
+
+
+// version history
+    $("#completediterations li").each(makeSameSize);
+
+    function makeSameSize(index, el) {
+        var $this = $(el),
+            w = $this.outerWidth(),
+            h = $this.outerHeight(),
+            a = ((Math.abs(w - h) / 2) / 16) + 2;
+
+        $this.css("padding", function() {
+            return (w < h)
+                ? "2em " + a + "em"
+                : a + "em 2em";
+        });
+    }
+
+
+});
