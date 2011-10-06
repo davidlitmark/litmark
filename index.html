@@ -1,111 +1,49 @@
-<!DOCTYPE html>
-
-<!-- 
-320 and Up boilerplate extension
-Author: Andy Clarke
-Version: 0.9b
-URL: http://stuffandnonsense.co.uk/projects/320andup 
--->
-
-<!--[if IEMobile 7 ]>
-<html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
-<!--[if lt IE 7 ]>
-<html class="no-js ie6" lang="en"><![endif]-->
-<!--[if IE 7 ]>
-<html class="no-js ie7" lang="en"><![endif]-->
-<!--[if IE 8 ]>
-<html class="no-js ie8" lang="en"><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
-<html class="no-js" manifest="default.appcache?v=1" lang="en"><!--<![endif]-->
-
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
 
     <title>David Litmark</title>
-    <meta name="description" content="The website of David Litmark">
+    <meta name="description" content="David Litmark's website">
     <meta name="author" content="David Litmark">
 
-    <!-- http://t.co/dKP3o1e -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!-- For less capable mobile browsers
-    <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
-    <!-- For all browsers -->
-    <link rel="stylesheet" media="screen" href="css/style.css?v=1">
+    <!-- CSS: implied media=all -->
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end CSS-->
 
-    <link rel="stylesheet" media="print" href="css/print.css?v=1">
-    <!-- For progressively larger displays -->
-    <link rel="stylesheet" media="only screen and (min-width: 480px)" href="css/480.css?v=1">
-    <link rel="stylesheet" media="only screen and (min-width: 768px)" href="css/768.css?v=1">
-    <link rel="stylesheet" media="only screen and (min-width: 992px)" href="css/992.css?v=1">
-    <link rel="stylesheet" media="only screen and (min-width: 1382px)" href="css/1382.css?v=1">
-    <!-- For Retina displays -->
-    <link rel="stylesheet"
-          media="only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)"
-          href="css/2x.css?v=1">
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
-
-    <!-- JavaScript -->
-    <script src="js/libs/modernizr-1.7.min.js"></script>
-    <script src="js/libs/less-1.1.3.min.js"></script>
-
-
-    <!-- For iPhone 4 -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/h/apple-touch-icon.png">
-    <!-- For iPad 1-->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/m/apple-touch-icon.png">
-    <!-- For iPhone 3G, iPod Touch and Android -->
-    <link rel="apple-touch-icon-precomposed" href="img/l/apple-touch-icon-precomposed.png">
-    <!-- For Nokia -->
-    <link rel="shortcut icon" href="img/l/apple-touch-icon.png">
-    <!-- For everything else -->
-    <link rel="shortcut icon" href="/favicon.ico">
-
-    <!--iOS. Delete if not required -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-startup-image" href="img/splash.png">
-
-    <!--Microsoft. Delete if not required -->
-    <meta http-equiv="cleartype" content="on">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <!-- http://t.co/y1jPVnT -->
-    <link rel="canonical" href="/">
+    <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+    Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+    For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
-<body class="clearfix">
+<body>
 
-<header role="banner" class="clearfix">
+<div id="container">
+<header role="banner">
     <h1>David Litmark</h1>
-
-
-    <nav role="navigation">
-        <h2>Contents</h2>
-        <ul>
-            <li><a href="#theidea">The Idea</a></li>
-            <li><a href="#theprocess">The Process</a></li>
-            <li><a href="#dod">Definition of Done</a></li>
-            <li><a href="#stuff">Stuff to Consider</a></li>
-            <li><a href="#whoami">Who am I?</a></li>
-            <!--<li><a href="#blogpost">Featured Blog Post</a></li>-->
-            <li><a href="#tweets">Most Recent Tweets</a></li>
-            <li><a href="#zootool">Most Recent Bookmarks</a></li>
-            <li><a href="#completediterations">Version History (completed iterations)</a></li>
-        </ul>
-    </nav>
 </header>
 
-
-<div class="content clearfix">
-
-<div role="main">
+<div id="main" role="main">
 <section id="featurette">
     <header>
-        <h2>What's new?</h2>
+        <h2 class="navtitle">What's new?</h2>
     </header>
     <div class="entry-content">
     </div>
@@ -114,7 +52,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 
 <section id="theidea">
     <header>
-        <h2>The Idea</h2>
+        <h2 class="navtitle">The Idea</h2>
     </header>
     <div class="entry-content">
         <h3>What is this?</h3>
@@ -139,7 +77,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 
 <section id="theprocess">
     <header>
-        <h2>The Process</h2>
+        <h2 class="navtitle">The Process</h2>
     </header>
     <div class="entry-content">
         <ol>
@@ -166,110 +104,23 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 </section>
 <section id="dod">
     <header>
-        <h2>Definition of Done</h2>
+        <h2 class="navtitle">Definition of Done</h2>
     </header>
     <div class="entry-content"><p>These requirements must be fulfilled each sprint.</p>
         <ol>
             <li>The html validates (HTML5)</li>
-            <li>The site appears and behaves as intended in the latest version of chrome on a mac running osx lion. Here's why: The timeboxing for each sprint does not permit testing on each platform and on a variety of browsers (or devices). You will probably be able to browse the site but it may look like absolute sh**e. If it does it obviously will be fixed sometime, but not until I get around to it.</li>
+            <li>The site appears and behaves as intended in the latest version of chrome on a mac running osx lion.
+                Here's why: The timeboxing for each sprint does not permit testing on each platform and on a variety of
+                browsers (or devices). You will probably be able to browse the site but it may look like absolute sh**e.
+                If it does it obviously will be fixed sometime, but not until I get around to it.
+            </li>
         </ol>
-    </div>
-</section>
-
-<section id="stuff">
-    <header>
-        <h2>Stuff to Consider</h2>
-    </header>
-    <div class="entry-content">
-        <p>Explored stuff is
-            <mark>highlighted</mark>
-            .
-        </p>
-
-        <h3>Tech. Stuff</h3>
-
-        <div>
-            <ul>
-                <li>Backbone</li>
-                <li>Knockout</li>
-                <li>Amplify</li>
-                <li>
-                    <mark>humans TXT</mark>
-                </li>
-                <li>
-                    <mark>Typekit</mark>
-                </li>
-                <li>Treesaver</li>
-                <li>
-                    <mark>{less}</mark>
-                </li>
-                <li>
-                    <mark>html5 boilerplate</mark>
-                </li>
-                <li>underscore</li>
-                <li>Less Framework</li>
-                <li>
-                    <mark>lettering JS</mark>
-                </li>
-                <li>Modernizr</li>
-                <li>YepNope</li>
-                <li>
-                    <mark>github</mark>
-                </li>
-                <li>qUnit</li>
-                <li>Jasmine</li>
-                <li>
-                    <mark>WAI-ARIA</mark>
-                </li>
-                <li>jQuery Mobile</li>
-                <li>Node</li>
-                <li>headjs</li>
-                <li>
-                    <mark>320 and Up</mark>
-                </li>
-                <li>pavlov</li>
-                <li>
-                    <mark>Web fonts</mark>
-                </li>
-                <li>
-                    <mark>Tumblr</mark>
-                </li>
-                <li>
-                    <mark>DISQUS</mark>
-                </li>
-                <li>
-                    <mark>FeedBurner</mark>
-                </li>
-                <li>
-                    tempojs
-                </li>
-            </ul>
-        </div>
-        <h3>Misc. Stuff</h3>
-
-        <div>
-            <ul>
-                <li>
-                    <mark>Progressive enhancement</mark>
-                </li>
-                <li>Unobfuscated JavaScript</li>
-                <li>
-                    <mark>Responsive web design</mark>
-                </li>
-                <li>
-                    <mark>Mobile First</mark>
-                </li>
-                <li>Test driven development (TDD)</li>
-                <li>Behavior driven development (BDD)</li>
-                <li>Modular Scale (modularscale.com)</li>
-            </ul>
-        </div>
     </div>
 </section>
 
 <section id="tweets">
     <header>
-        <h2>Most Recent Tweets</h2>
+        <h2 class="navtitle">Most Recent Tweets</h2>
     </header>
     <div class="entry-content">
         <script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -308,7 +159,7 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 
 <section id="whoami">
     <header>
-        <h2>Who am I?</h2>
+        <h2 class="navtitle">Who am I?</h2>
     </header>
     <div class="entry-content">
         <p>A front-end developer / SharePoint developer currently employed by <a href="http://www.mogul.com"
@@ -345,6 +196,17 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
     </header>
     <div class="entry-content">
         <article role="article">
+            <header><h3>Sprint 16 / Build 0018</h3></header>
+            <ul>
+                <li>Replaced the 320 and Up boilerplate with the HTML5 boilerplate 2.0</li>
+                <li>Introducing MEgalopolis Extra from <a href="http://www.smeltery.net/">SMELTERY</a> as header font</li>
+                <li>Added text-shadows to all headings, regardless of level</li>
+                <li>Added circles in front of all unordered list items</li>
+                <li>Removed the section "Stuff to Consider"</li>
+                <li>Removed a bunch of styles. Back to basic. YAGNI-ish.</li>
+            </ul>
+        </article>
+        <article role="article">
             <header><h3>Sprint 15 / Build 0017</h3></header>
             <ul>
                 <li>Added a gradient background to all circles</li>
@@ -357,7 +219,9 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
             <header><h3>Sprint 14 / Build 0016</h3></header>
             <ul>
                 <li>Transformed all the items in the "Version history" section to circles with text on top</li>
-                <li>Aligned the contents in the "What's new", "Version history" and footer sections relative to the center</li>
+                <li>Aligned the contents in the "What's new", "Version history" and footer sections relative to the
+                    center
+                </li>
                 <li>Decreased the page width</li>
                 <li>Rearranged the content</li>
             </ul>
@@ -540,16 +404,9 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
 </section>
 
 
-
 </div>
 
-<div role="complementary">
-</div>
-
-</div>
-
-
-<footer role="contentinfo" class="clearfix">
+<footer role="contentinfo">
     <a href="humans.txt"><img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT"
                               title="Click to read the Humans TXT"></a>
     <a href="http://www.w3.org/html/logo/" rel="external"><img src="img/HTML5_Logo_64.png" width="64" height="64"
@@ -566,41 +423,46 @@ URL: http://stuffandnonsense.co.uk/projects/320andup
             alt="Proud user of WebStorm" border="0"/></a>
     <a href="http://www.komodomedia.com/" rel="external"><p>Social Network Icons by Komodo Media</p></a>
 </footer>
+</div>
+<!--! end of #container -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
 <!-- Scripts -->
 <script src="js/libs/jquery.lettering-0.6.1.min.js"></script>
 
-<!-- own scripts -->
-<script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
-
-<!--[if (lt IE 9) & (!IEMobile)]>
-<script src="js/libs/DOMAssistantCompressed-2.8.js"></script>
-<script src="js/libs/selectivizr-1.0.1.js"></script>
-<script src="js/libs/respond.min.js"></script>
-<![endif]-->
+<!-- scripts concatenated and minified via ant build script-->
+<script defer src="js/plugins.js"></script>
+<script defer src="js/script.js"></script>
+<!-- end scripts-->
 
 
-<!--<div id="zootool-badge"></div>-->
-
-
-<!-- http://t.co/HZe9oJ4 -->
+<!-- Change UA-XXXXX-X to be your site's ID -->
 <script>
-    var _gaq = [
+    window._gaq = [
         ['_setAccount','UA-22627911-2'],
-        ['_trackPageview']
+        ['_trackPageview'],
+        ['_trackPageLoadTime']
     ];
-    (function(d, t) {
-        var g = d.createElement(t),s = d.getElementsByTagName(t)[0];
-        g.async = 1;
-        g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g, s)
-    }(document, 'script'));
+    Modernizr.load({
+        load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
 </script>
-<noscript>Your browser does not support JavaScript!</noscript>
+
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<script>window.attachEvent('onload', function() {
+    CFInstall.check({mode:'overlay'})
+})</script>
+<![endif]-->
 
 </body>
 </html>

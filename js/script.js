@@ -39,20 +39,28 @@ jQuery(document).ready(function() {
 
 
 // version history
-    $("#completediterations li").each(makeSameSize);
-
-    function makeSameSize(index, el) {
-        var $this = $(el),
-            w = $this.outerWidth(),
-            h = $this.outerHeight(),
-            a = ((Math.abs(w - h) / 2) / 16) + 2;
-
-        $this.css("padding", function() {
-            return (w < h)
-                ? "2em " + a + "em"
-                : a + "em 2em";
-        });
-    }
-
-
+//    $("#completediterations li").each(makeSameSize);
+//
+//    function makeSameSize(index, el) {
+//        var $this = $(el),
+//            w = $this.outerWidth(),
+//            h = $this.outerHeight(),
+//            a = ((Math.abs(w - h) / 2) / 16) + 2;
+//
+//        $this.css("padding", function() {
+//            return (w < h)
+//                ? "2em " + a + "em"
+//                : a + "em 2em";
+//        });
+//    }
 });
+
+//$(function(){
+////    new FlexibleNav( new FlexibleNavMaker().make().prependTo('body') );
+//    var nav = new FlexibleNavMaker(".navtitle").make().prependTo('body');
+//    new FlexibleNav(nav);
+//});
+
+
+
+

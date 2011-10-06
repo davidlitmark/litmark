@@ -14,15 +14,13 @@
 /* SITE */
   Standards: HTML5, CSS3
   Components:
-    html5boilerplate,
-    320 and Up,
+    html5boilerplate 2.0,    
     jQuery,
     lettering.js
     {less}
   Software:
     WebStorm,
-    Sublime Text 2,
-    Things
+    Sublime Text 2
   
 
                                     
