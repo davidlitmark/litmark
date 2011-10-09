@@ -35,9 +35,27 @@
 
 <body>
 
+<div class="topbar" data-scrollspy="scrollspy">
+    <div class="topbar-inner">
+        <div class="container">
+            <ul class="nav">
+                <li class="active"><a href="#top">Top</a></li>
+                <li><a href="#featurette">What's new?</a></li>
+                <li><a href="#theidea">The Idea</a></li>
+                <li><a href="#theprocess">The Process</a></li>
+                <li><a href="#dod">DoD</a></li>
+                <li><a href="#tweets">Tweets</a></li>
+                <li><a href="#zootool">Bookmarks</a></li>
+                <li><a href="#whoami">Who Am I?</a></li>
+                <li><a href="#completediterations">Version History</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 <div id="container">
 <header role="banner">
-    <h1>David Litmark</h1>
+    <h1 id="top">David Litmark</h1>
 </header>
 
 <div id="main" role="main">
@@ -48,7 +66,6 @@
     <div class="entry-content">
     </div>
 </section>
-
 
 <section id="theidea">
     <header>
@@ -73,7 +90,6 @@
         <p>Who knows? That said, I do have a direction and a bunch of requirements. But hey, since this is an agile
             process they may change over time.</p></div>
 </section>
-
 
 <section id="theprocess">
     <header>
@@ -120,7 +136,7 @@
 
 <section id="tweets">
     <header>
-        <h2 class="navtitle">Most Recent Tweets</h2>
+        <h2 class="navtitle">Tweets Most Recent</h2>
     </header>
     <div class="entry-content">
         <script src="http://widgets.twimg.com/j/2/widget.js"></script>
@@ -191,216 +207,228 @@
 </section>
 
 <section id="completediterations">
-    <header>
-        <h2>Version History completed iterations</h2>
-    </header>
-    <div class="entry-content">
-        <article role="article">
-            <header><h3>Sprint 16 / Build 0018</h3></header>
-            <ul>
-                <li>Replaced the 320 and Up boilerplate with the HTML5 boilerplate 2.0</li>
-                <li>Introducing MEgalopolis Extra from <a href="http://www.smeltery.net/">SMELTERY</a> as header font</li>
-                <li>Added text-shadows to all headings, regardless of level</li>
-                <li>Added circles in front of all unordered list items</li>
-                <li>Removed the section "Stuff to Consider"</li>
-                <li>Removed a bunch of styles. Back to basic. YAGNI-ish.</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 15 / Build 0017</h3></header>
-            <ul>
-                <li>Added a gradient background to all circles</li>
-                <li>Added a text shadow to each version title</li>
-                <li>Added a fading brush stroke background to each version title</li>
-                <li>Nested a bunch of CSS rules</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 14 / Build 0016</h3></header>
-            <ul>
-                <li>Transformed all the items in the "Version history" section to circles with text on top</li>
-                <li>Aligned the contents in the "What's new", "Version history" and footer sections relative to the
-                    center
-                </li>
-                <li>Decreased the page width</li>
-                <li>Rearranged the content</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 13 / Build 0014</h3></header>
-            <ul>
-                <li>Added the "What's new?" section. This section includes all modifications to the latest release</li>
-                <li>Added a browser disclaimer to the definition of done</li>
-                <li>Reorganized the content flow</li>
-                <li>Removed the table of contents</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 12 / Build 0013</h3></header>
-            <ul>
-                <li>{less} is now used for generating all the CSS</li>
-                <li>Increased the size of the title and centered it horizontally</li>
-                <li>Added text shadows to headings</li>
-                <li>Added rotation to all headings, just for the fun of it</li>
-                <li>Replaced the leather with paper</li>
-                <li>Updated humans TXT</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 11 / Build 0012</h3></header>
-            <ul>
-                <li>Added the Pomodoro badge, linked to the Pomodoro Technique web site</li>
-                <li>Added the WebStorm link logo, linked to the Jet Brain's WebStorm web site</li>
-                <li>Added article elements where appropriate</li>
-                <li>Added HTML5 link relationships</li>
-                <li>Added XFN microformat to links</li>
-                <li>Added WAI-ARIA roles</li>
-                <li>Added typography styles for most of the headers. Experimental.</li>
-                <li>Added measurements for the modular scale to the CSS, based on the numbers 16 and 82</li>
-                <li>Modified the body width to align to the grid</li>
-                <li>Removed css transforms from sidenote in the "The Process" section</li>
-                <li>Removed four columns layout from the "The Idea" section</li>
-                <li>Decided not to write every update on the form "A visitor ..."</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 10 / Build 0011</h3></header>
-            <ul>
-                <li>A visitor can view my latest bookmarks</li>
-                <li>A visitor can read my latest tweets</li>
-                <li>A visitor can view a social media icon for zootool</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 9 / Build 0009</h3></header>
-            <ul>
-                <li>A visitor can read an introduction to a featured blog post</li>
-                <li>A visitor can navigate to the featured blog post by clicking on its title</li>
-                <li>A visitor to the blog can sign in before posting comments</li>
-                <li>A visitor to the blog can read social media reactions for a post from other services around the
-                    web
-                </li>
-                <li>A visitor to the blog can mention others users within a post</li>
-                <li>A visitor to the blog can automatically reply by twitter when sharing replies to comments</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 8 / Build 0008</h3></header>
-            <ul>
-                <li>A visitor can read blog posts at <a
-                        href="http://blog.davidlitmark.com" rel="external">blog.davidlitmark.com</a></li>
-                <li>A visitor to the blog can comment on posts (DISQUS)</li>
-                <li>A visitor to the blog can read my latest tweets</li>
-                <li>A visitor to the blog can subscribe to posts (FeedBurner)</li>
-                <li>A visitor to the blog can read syntax highlighted JavaScript</li>
-                <li>A visitor to the blog can experience a very basic design and layout based on the tumblr default
-                    theme
-                    (to be customized further)
-                </li>
-                <li>A visitor can click a link to the blog, both from the contents section and the who-am-i
-                    section
-                </li>
-                <li>A visitor can view a social media icon for tumblr</li>
-                <li>A visitor can read <i>visitor</i> instead of <i>user</i> in the description of user stories (for
-                    clarification)
-                </li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 7 / Build 0007</h3></header>
-            <ul>
-                <li>A visitor can experience a background texture reminiscent of leather (thnx <a
-                        href="http://twitter.com/karllofholm" rel="external">@karllofholm</a> for the tip)
-                </li>
-                <li>A visitor can experience columns, based on screen width (css3 columns and media queries)</li>
-                <li>A visitor can experience rotated content (css3 transform)</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 6 / Build 0006</h3></header>
-            <ul>
-                <li>A visitor can read headlines and text in web fonts PTSerifCaptionRegular and PTSerifRegular,
-                    respectively
-                </li>
-                <li>A visitor can navigate the page using a table of contents, linking to each section</li>
-                <li>A visitor can experience a yellow tiled background texture, reminiscent of fabrics</li>
-                <li>A visitor can view social media icons for linkedin and twitter</li>
-                <li>A visitor can read an attribution to Komodo media, for the use of the social media icons
-                    (licensed
-                    under Creative Commons Attribution-Share Alike 3.0 Unported License)
-                </li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 5 / Build 0005</h3></header>
-            <ul>
-                <li>A visitor can read headlines and text in web fonts Museo Sans and Museo, respectively (served
-                    from
-                    Typekit)
-                </li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 4 / Build 0004</h3></header>
-            <ul>
-                <li>A visitor is served assets and layout styles progressively and only as they’re needed (320 and
-                    Up)
-                </li>
-                <li>A visitor can experience a very basic design and layout based on the 320 and Up default styles
-                    (to be
-                    improved)
-                </li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 3 / Build 0003</h3></header>
-            <ul>
-                <li>A visitor can find out about explored stuff (currently highlighted)</li>
-                <li>A visitor is served optimized images</li>
-                <li>A visitor can read user stories formulated according to the guidelines in <a
-                        href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685"
-                        rel="external">User
-                    Stories Applied</a>
-                </li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 2 / Build 0002</h3></header>
-            <ul>
-                <li>A visitor can view the HTML5 logo</li>
-                <li>A visitor can click a link to my LinkedIn profile</li>
-                <li>A visitor can click a link to my twitter (follow me)</li>
-                <li>A visitor can read a Definition of Done (DoD). Each sprint must fulfill the DoD prior to
-                    deployment
-                </li>
-                <li>A visitor can read the build number next to the sprint increment (for clarification)</li>
-                <li>A visitor can read that the process now has more of a Kanban approach, rather than Scrum</li>
-                <li>A visitor is served minified JavaScript</li>
-                <li>A visitor is served minified CSS</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 1 / Build 0001</h3></header>
-            <ul>
-                <li>A visitor can read an introduction on the purpose of the process</li>
-                <li>A visitor can click a humans TXT logo and read the humans.txt file</li>
-                <li>A visitor can find the source code on my github (github/davidlitmark)</li>
-                <li>A visitor can experience a very basic design and layout (to be improved)</li>
-                <li>An administrator can analyze the web traffic by using Google Analytics</li>
-            </ul>
-        </article>
-        <article role="article">
-            <header><h3>Sprint 0</h3></header>
-            <ul>
-                <li>The project is set up in Things</li>
-                <li>A set of goals and requirements are produced</li>
-                <li>The platform is decided upon</li>
-                <li>A work / build workflow is established</li>
-                <li>All domains are set up to point to one domain</li>
-                <li>A product backlog is produced</li>
-            </ul>
-        </article>
-    </div>
+<header>
+    <h2>Version History completed iterations</h2>
+</header>
+<div class="entry-content">
+<article role="article">
+    <header><h3>Release 17</h3></header>
+    <ul>
+        <li>Added the top navigation and ScrollSpy plugin from the the Bootstrap toolkit. The ScrollSpy auto activates
+            navigation buttons by user's scroll position. Scroll the page and watch it in action.
+        </li>
+        <li>Added a padding to improve the experience on narrow screens (e.g iPhone)</li>
+        <li>Modularized the {less} setup by using mixins and imports</li>
+        <li>Renamed Sprint to Release in the version history (this section). This will also be effective in the announcements tweets since I no longer will post build number, but release number.</li>
+        <li>Removed the build number from the version history</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 16</h3></header>
+    <ul>
+        <li>Replaced the 320 and Up boilerplate with the HTML5 boilerplate 2.0</li>
+        <li>Introducing MEgalopolis Extra from <a href="http://www.smeltery.net/">SMELTERY</a> as header font</li>
+        <li>Added text-shadows to all headings, regardless of level</li>
+        <li>Added circles in front of all unordered list items</li>
+        <li>Removed the section "Stuff to Consider"</li>
+        <li>Removed a bunch of styles. Back to basic. YAGNI-ish.</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 15</h3></header>
+    <ul>
+        <li>Added a gradient background to all circles</li>
+        <li>Added a text shadow to each version title</li>
+        <li>Added a fading brush stroke background to each version title</li>
+        <li>Nested a bunch of CSS rules</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 14</h3></header>
+    <ul>
+        <li>Transformed all the items in the "Version history" section to circles with text on top</li>
+        <li>Aligned the contents in the "What's new", "Version history" and footer sections relative to the
+            center
+        </li>
+        <li>Decreased the page width</li>
+        <li>Rearranged the content</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 13</h3></header>
+    <ul>
+        <li>Added the "What's new?" section. This section includes all modifications to the latest release</li>
+        <li>Added a browser disclaimer to the definition of done</li>
+        <li>Reorganized the content flow</li>
+        <li>Removed the table of contents</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 12</h3></header>
+    <ul>
+        <li>{less} is now used for generating all the CSS</li>
+        <li>Increased the size of the title and centered it horizontally</li>
+        <li>Added text shadows to headings</li>
+        <li>Added rotation to all headings, just for the fun of it</li>
+        <li>Replaced the leather with paper</li>
+        <li>Updated humans TXT</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 11</h3></header>
+    <ul>
+        <li>Added the Pomodoro badge, linked to the Pomodoro Technique web site</li>
+        <li>Added the WebStorm link logo, linked to the Jet Brain's WebStorm web site</li>
+        <li>Added article elements where appropriate</li>
+        <li>Added HTML5 link relationships</li>
+        <li>Added XFN microformat to links</li>
+        <li>Added WAI-ARIA roles</li>
+        <li>Added typography styles for most of the headers. Experimental.</li>
+        <li>Added measurements for the modular scale to the CSS, based on the numbers 16 and 82</li>
+        <li>Modified the body width to align to the grid</li>
+        <li>Removed css transforms from sidenote in the "The Process" section</li>
+        <li>Removed four columns layout from the "The Idea" section</li>
+        <li>Decided not to write every update on the form "A visitor ..."</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 10</h3></header>
+    <ul>
+        <li>A visitor can view my latest bookmarks</li>
+        <li>A visitor can read my latest tweets</li>
+        <li>A visitor can view a social media icon for zootool</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 9</h3></header>
+    <ul>
+        <li>A visitor can read an introduction to a featured blog post</li>
+        <li>A visitor can navigate to the featured blog post by clicking on its title</li>
+        <li>A visitor to the blog can sign in before posting comments</li>
+        <li>A visitor to the blog can read social media reactions for a post from other services around the
+            web
+        </li>
+        <li>A visitor to the blog can mention others users within a post</li>
+        <li>A visitor to the blog can automatically reply by twitter when sharing replies to comments</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 8</h3></header>
+    <ul>
+        <li>A visitor can read blog posts at <a
+                href="http://blog.davidlitmark.com" rel="external">blog.davidlitmark.com</a></li>
+        <li>A visitor to the blog can comment on posts (DISQUS)</li>
+        <li>A visitor to the blog can read my latest tweets</li>
+        <li>A visitor to the blog can subscribe to posts (FeedBurner)</li>
+        <li>A visitor to the blog can read syntax highlighted JavaScript</li>
+        <li>A visitor to the blog can experience a very basic design and layout based on the tumblr default
+            theme
+            (to be customized further)
+        </li>
+        <li>A visitor can click a link to the blog, both from the contents section and the who-am-i
+            section
+        </li>
+        <li>A visitor can view a social media icon for tumblr</li>
+        <li>A visitor can read <i>visitor</i> instead of <i>user</i> in the description of user stories (for
+            clarification)
+        </li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 7</h3></header>
+    <ul>
+        <li>A visitor can experience a background texture reminiscent of leather (thnx <a
+                href="http://twitter.com/karllofholm" rel="external">@karllofholm</a> for the tip)
+        </li>
+        <li>A visitor can experience columns, based on screen width (css3 columns and media queries)</li>
+        <li>A visitor can experience rotated content (css3 transform)</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 6</h3></header>
+    <ul>
+        <li>A visitor can read headlines and text in web fonts PTSerifCaptionRegular and PTSerifRegular,
+            respectively
+        </li>
+        <li>A visitor can navigate the page using a table of contents, linking to each section</li>
+        <li>A visitor can experience a yellow tiled background texture, reminiscent of fabrics</li>
+        <li>A visitor can view social media icons for linkedin and twitter</li>
+        <li>A visitor can read an attribution to Komodo media, for the use of the social media icons
+            (licensed
+            under Creative Commons Attribution-Share Alike 3.0 Unported License)
+        </li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 5</h3></header>
+    <ul>
+        <li>A visitor can read headlines and text in web fonts Museo Sans and Museo, respectively (served
+            from
+            Typekit)
+        </li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 4</h3></header>
+    <ul>
+        <li>A visitor is served assets and layout styles progressively and only as they’re needed (320 and
+            Up)
+        </li>
+        <li>A visitor can experience a very basic design and layout based on the 320 and Up default styles
+            (to be
+            improved)
+        </li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 3</h3></header>
+    <ul>
+        <li>A visitor can find out about explored stuff (currently highlighted)</li>
+        <li>A visitor is served optimized images</li>
+        <li>A visitor can read user stories formulated according to the guidelines in <a
+                href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685"
+                rel="external">User
+            Stories Applied</a>
+        </li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 2</h3></header>
+    <ul>
+        <li>A visitor can view the HTML5 logo</li>
+        <li>A visitor can click a link to my LinkedIn profile</li>
+        <li>A visitor can click a link to my twitter (follow me)</li>
+        <li>A visitor can read a Definition of Done (DoD). Each sprint must fulfill the DoD prior to
+            deployment
+        </li>
+        <li>A visitor can read the build number next to the sprint increment (for clarification)</li>
+        <li>A visitor can read that the process now has more of a Kanban approach, rather than Scrum</li>
+        <li>A visitor is served minified JavaScript</li>
+        <li>A visitor is served minified CSS</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 1</h3></header>
+    <ul>
+        <li>A visitor can read an introduction on the purpose of the process</li>
+        <li>A visitor can click a humans TXT logo and read the humans.txt file</li>
+        <li>A visitor can find the source code on my github (github/davidlitmark)</li>
+        <li>A visitor can experience a very basic design and layout (to be improved)</li>
+        <li>An administrator can analyze the web traffic by using Google Analytics</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 0</h3></header>
+    <ul>
+        <li>The project is set up in Things</li>
+        <li>A set of goals and requirements are produced</li>
+        <li>The platform is decided upon</li>
+        <li>A work / build workflow is established</li>
+        <li>All domains are set up to point to one domain</li>
+        <li>A product backlog is produced</li>
+    </ul>
+</article>
+</div>
 </section>
 
 
@@ -435,6 +463,7 @@
 
 <!-- Scripts -->
 <script src="js/libs/jquery.lettering-0.6.1.min.js"></script>
+<script src="js/libs/bootstrap-scrollspy.js"></script>
 
 <!-- scripts concatenated and minified via ant build script-->
 <script defer src="js/plugins.js"></script>

@@ -9,9 +9,9 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 }
 
 
-// zootools
-// TODO: Refactor!
-// TODO: zb included twice below?
+//// zootools
+//// TODO: Refactor!
+//// TODO: zb included twice below?
 (function(d, t) {
     var zb = d.createElement(t),s = d.getElementsByTagName(t)[0];
     zb.async = 1;
@@ -25,6 +25,7 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 
 }(document, 'script'));
 
+
 jQuery(document).ready(function() {
 
 //lettering - headers
@@ -34,32 +35,17 @@ jQuery(document).ready(function() {
 // what's new
     $("#featurette .entry-content")
         .load("index.html #completediterations article:eq(0) ul", function() {
-            $("#featurette li").each(makeSameSize);
         });
 
 
-// version history
-//    $("#completediterations li").each(makeSameSize);
-//
-//    function makeSameSize(index, el) {
-//        var $this = $(el),
-//            w = $this.outerWidth(),
-//            h = $this.outerHeight(),
-//            a = ((Math.abs(w - h) / 2) / 16) + 2;
-//
-//        $this.css("padding", function() {
-//            return (w < h)
-//                ? "2em " + a + "em"
-//                : a + "em 2em";
-//        });
-//    }
+    /**
+     * Bootstrap toolkit
+     */
+    $('#topbar').scrollSpy();
+
 });
 
-//$(function(){
-////    new FlexibleNav( new FlexibleNavMaker().make().prependTo('body') );
-//    var nav = new FlexibleNavMaker(".navtitle").make().prependTo('body');
-//    new FlexibleNav(nav);
-//});
+
 
 
 
