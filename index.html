@@ -35,30 +35,13 @@
 
 <body>
 
-<div class="topbar" data-scrollspy="scrollspy">
-    <div class="topbar-inner">
-        <div class="container">
-            <ul class="nav">
-                <li class="active"><a href="#top">Top</a></li>
-                <li><a href="#featurette">What's new?</a></li>
-                <li><a href="#theidea">The Idea</a></li>
-                <li><a href="#theprocess">The Process</a></li>
-                <li><a href="#dod">DoD</a></li>
-                <li><a href="#tweets">Tweets</a></li>
-                <li><a href="#zootool">Bookmarks</a></li>
-                <li><a href="#whoami">Who Am I?</a></li>
-                <li><a href="#completediterations">Version History</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 <div id="container">
 <header role="banner">
     <h1 id="top">David Litmark</h1>
 </header>
 
 <div id="main" role="main">
+
 <section id="featurette">
     <header>
         <h2 class="navtitle">What's new?</h2>
@@ -136,40 +119,10 @@
 
 <section id="tweets">
     <header>
-        <h2 class="navtitle">Tweets Most Recent</h2>
+        <h2 class="navtitle">Tweets - Most Recent</h2>
     </header>
     <div class="entry-content">
-        <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-        <script>
-            new TWTR.Widget({
-                version: 2,
-                type: 'profile',
-                rpp: 4,
-                interval: 6000,
-                width: 'auto',
-                height: 300,
-                theme: {
-                    shell: {
-                        background: 'transparent',
-                        color: '#ffffff'
-                    },
-                    tweets: {
-                        background: 'transparent',
-                        color: '#282828',
-                        links: '#1777af'
-                    }
-                },
-                features: {
-                    scrollbar: false,
-                    loop: false,
-                    live: false,
-                    hashtags: true,
-                    timestamp: true,
-                    avatars: false,
-                    behavior: 'all'
-                }
-            }).render().setUser('davidlitmark').start();
-        </script>
+        <ul></ul>
     </div>
 </section>
 
@@ -208,9 +161,27 @@
 
 <section id="completediterations">
 <header>
-    <h2>Version History completed iterations</h2>
+    <h2>Version History - </br>completed iterations</h2>
 </header>
 <div class="entry-content">
+<article role="article">
+    <header><h3>Release 19</h3></header>
+    <ul>
+        <li>Replaced the twitter widget with my own, written using backbone.js</li>
+        <li>Added a white semi-transparent background to the main container</li>
+        <li>Added a line break to tidy things up. Can you find it?</li>
+    </ul>
+</article>
+<article role="article">
+    <header><h3>Release 18</h3></header>
+    <ul>
+        <li>Added responsiveness. Resize the browser and watch the center column.</li>
+        <li>Replaced MEgalopolis Extra with League Gothic, from <a href="http://www.theleagueofmoveabletype.com/">the league of moveable type</a></li>
+        <li>Removed lettering.js and all the creative typography</li>
+        <li>Removed the top navigation and ScrollSpy plugin</li>
+        <li>Removed all the text shadows</li>
+    </ul>
+</article>
 <article role="article">
     <header><h3>Release 17</h3></header>
     <ul>
@@ -458,17 +429,19 @@
 <!-- JavaScript at the bottom for fast page loading -->
 
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"><\/script>')</script>
 
 <!-- Scripts -->
-<script src="js/libs/jquery.lettering-0.6.1.min.js"></script>
-<script src="js/libs/bootstrap-scrollspy.js"></script>
+<script defer src="js/libs/underscore.js"></script>
+<script defer src="js/libs/backbone.js"></script>
 
 <!-- scripts concatenated and minified via ant build script-->
 <script defer src="js/plugins.js"></script>
 <script defer src="js/script.js"></script>
+<script defer src="js/mylibs/twitter.js"></script>
 <!-- end scripts-->
+
 
 
 <!-- Change UA-XXXXX-X to be your site's ID -->

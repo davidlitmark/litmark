@@ -8,7 +8,6 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
     }
 }
 
-
 //// zootools
 //// TODO: Refactor!
 //// TODO: zb included twice below?
@@ -19,34 +18,16 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
     s.parentNode.insertBefore(zb, s);
     $("#tweets").after('' +
         '<section id="zootool">' +
-        '   <header><h2>Most Recent Bookmarks</h2></header>' +
+        '   <header><h2>Bookmarks - Most Recent</h2></header>' +
         '   <div class="entry-content"><div id="zootool-badge"> ' + zb + '</div></div>' +
         '</section>');
-
 }(document, 'script'));
 
 
 jQuery(document).ready(function() {
-
-//lettering - headers
-    $('#theidea h2, #theprocess h2').lettering('words').children('.word1').lettering();
-    $('#dod h2, #stuff h2, #whoami h2, #tweets h2, #zootool h2, #completediterations h2').lettering('words');
-
 // what's new
     $("#featurette .entry-content")
         .load("index.html #completediterations article:eq(0) ul", function() {
         });
-
-
-    /**
-     * Bootstrap toolkit
-     */
-    $('#topbar').scrollSpy();
-
 });
-
-
-
-
-
 

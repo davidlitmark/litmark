@@ -16,8 +16,7 @@
   Components:
     html5boilerplate 2.0,    
     jQuery,
-    lettering.js
-    {less}
+    LESS
   Software:
     WebStorm,
     Sublime Text 2
