@@ -16,18 +16,50 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
     zb.async = 1;
     zb.src = 'http://zootool.com/badge/davidlitmark/?count=10&size=75';
     s.parentNode.insertBefore(zb, s);
-    $("#tweets").after('' +
+    $("#whoami").before('' +
         '<section id="zootool">' +
-        '   <header><h2>Bookmarks - Most Recent</h2></header>' +
+        '   <header><h2>Bookmarks</h2></header>' +
         '   <div class="entry-content"><div id="zootool-badge"> ' + zb + '</div></div>' +
         '</section>');
 }(document, 'script'));
 
+// underscore template syntax
+_.templateSettings = {
+    interpolate : /\{\{(.+?)\}\}/g,
+    evaluate: /<%(.+?)%>/g
+};
 
-jQuery(document).ready(function() {
-// what's new
-    $("#featurette .entry-content")
-        .load("index.html #completediterations article:eq(0) ul", function() {
-        });
-});
+
+//// todo: improve!
+//jQuery("document").ready(function($) {
+//
+//    if (Modernizr.mq('only screen and (min-width: 768px)')) {
+//        $("#tweets").prependTo(".col-b");
+//    }
+//
+//});
+
+
+window.App = window.App || {};
+
+App.start = function() {
+    new App.TweetResultsView();
+    new App.VersionsResultsView();
+    new App.LatestVersionView();
+};
+
+App.Templates = {
+    twitter: function() {
+        return "<p>{{ text }}</p><p class='date'>{{ created_at }}</p>";
+    },
+    versionhistory: function() {
+        return "<header><h3>Release {{ release }}</h3></header><ul><% _.each(items,function(item){ %><li>{{ item.text }}</li><% }); %></ul>";
+    },
+    latestversion: function() {
+        return "<ul><% _.each(items,function(item){ %><li>{{ item.text }}</li><% }); %></ul>";
+    }
+};
+
+App.start();
+
 

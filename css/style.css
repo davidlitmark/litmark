@@ -317,12 +317,11 @@ td {
   vertical-align: top;
 }
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: David Litmark
    ========================================================================== */
-/* ===============
-   LESS
-   =============== */
-/* litmark less */
+/* =============================================================================
+   Web fonts
+   ========================================================================== */
 @font-face {
   font-family: 'PTSerifCaptionRegular';
   src: url('../fonts/PTZ55F-webfont.eot');
@@ -347,9 +346,7 @@ td {
 /* =============================================================================
    Base
    ========================================================================== */
-html {
-  background: transparent url(../img/Paper-4.png) repeat 0 0;
-}
+/*html { background: transparent url(../img/Paper-4.png) repeat 0 0;}*/
 body {
   font-size: 16px;
   line-height: 1.4;
@@ -385,14 +382,16 @@ mark {
 }
 /*   ========================================================================== */
 #container {
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 2% 1%;
+  /*background-color: rgba(255, 255, 255, 0.6);*/
+
+  /*padding: 2% 1%;*/
+
   margin: 0 auto;
   width: 90%;
 }
 #container > header, #main {
   margin: 0 auto;
-  width: 65.90509666%;
+  max-width: 990px;
 }
 h1,
 h2,
@@ -401,23 +400,27 @@ h4,
 h5,
 h6 {
   font-family: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial;
-  text-rendering: optimizelegibility;
-  margin: 0.5em 0 0 0;
+  font-weight: normal;
+  margin: 0;
 }
 h1 {
   font-size: 8em;
   text-align: center;
   line-height: 0.9;
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
 }
 h2 {
   font-size: 5em;
   line-height: 0.9;
+  margin-bottom: 0.2em;
 }
 h3 {
   font-size: 2.5em;
   letter-spacing: 0.05em;
   line-height: 0.9;
+}
+section {
+  margin-bottom: 3em;
 }
 section div {
   font-size: 1.2em;
@@ -435,6 +438,7 @@ section div {
 }
 #tweets li:first-child {
   border: 0;
+  padding-top: 0;
 }
 #tweets p {
   padding: 0;
@@ -446,6 +450,23 @@ section div {
 }
 #whoami ul {
   list-style: none;
+  padding-left: 0;
+}
+#whoami li {
+  float: left;
+  padding: 0.5em;
+}
+#side-images {
+  padding: 1em 0;
+}
+#side-images img {
+  /*display: block;*/
+
+  /*margin: 0 auto;*/
+
+  max-width: 100%;
+  /*padding: 1em 0;*/
+
 }
 .sidenote {
   background-color: rgba(255, 278, 136, 0.3);
@@ -459,11 +480,6 @@ section div {
 #zootool-badge img {
   border: 0;
   padding: 0;
-}
-#zootool-badge ul {
-  width: 100%;
-  margin: 0;
-  padding: 5px;
 }
 #zootool-badge li {
   float: left;
@@ -486,6 +502,12 @@ footer {
 #completediterations li {
   padding: 0 0.25em;
   margin: 0.25em;
+}
+/* =============================================================================
+   hide for viewports less than 480px
+   ========================================================================== */
+#side-images, footer {
+  display: none;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.

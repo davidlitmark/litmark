@@ -1,3 +1,7 @@
+/* =============================================================================
+   Web fonts
+   ========================================================================== */
+
 @font-face {
     font-family: 'PTSerifCaptionRegular';
     src: url('../fonts/PTZ55F-webfont.eot');
@@ -29,7 +33,7 @@
    Base
    ========================================================================== */
 
-html { background: transparent url(../img/Paper-4.png) repeat 0 0;}
+/*html { background: transparent url(../img/Paper-4.png) repeat 0 0;}*/
 body { font-size: 16px; line-height: 1.4; }
 body, button, input, select, textarea { font-family: PTSerifRegular,"Helvetica Neue", Helvetica, Arial; }
 
@@ -55,8 +59,8 @@ mark {
 
 
 #container {
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 2% 1%;
+    /*background-color: rgba(255, 255, 255, 0.6);*/
+    /*padding: 2% 1%;*/
     margin:  0 auto;
     width: 90%;
 }
@@ -64,12 +68,9 @@ mark {
 #container > header,
 #main {
     margin: 0 auto;
-    width: 65.90509666%; // 750px / 1138px
+    max-width: 990px;
 }
 
-.text-shadow () {
-    text-shadow: #ffffff 1px 1px, #ffffff 2px 2px, #ffffff 3px 3px, #ffffff 4px 4px, #ffffff 5px 5px;
-}
 
 h1,
 h2,
@@ -78,21 +79,21 @@ h4,
 h5,
 h6 {
     font-family: LeagueGothicRegular, "Helvetica Neue", Helvetica, Arial;
-    text-rendering: optimizelegibility;
-    margin: 0.5em 0 0 0;
+    font-weight: normal; // fix for ios
+    margin: 0;
 }
 
 h1 {
     font-size: 8em;
     text-align: center;
     line-height: 0.9;
-    margin-bottom:0.5em;
-//    .text-shadow;
+    margin:0.5em 0;
 }
 
 h2 {
     font-size: 5em;
     line-height: 0.9;
+    margin-bottom: 0.2em;
 }
 
 h3 {
@@ -101,8 +102,14 @@ h3 {
     line-height: 0.9;
 }
 
-section div {
-    font-size: 1.2em;
+section {
+
+    margin-bottom: 3em;
+    
+    div {
+        font-size: 1.2em;
+    }
+
 }
 
 #featurette {
@@ -117,7 +124,10 @@ section div {
     li { padding: 1em 0;
         border-top: 1px dashed silver;
         }
-        li:first-child{border:0}
+        li:first-child{
+            border:0;
+            padding-top: 0;
+            }
     p { padding: 0; margin:0;}
     .date {
         color: gray;
@@ -129,8 +139,26 @@ section div {
 
     ul {
         list-style: none;
+        padding-left: 0;
     }
 
+    li {
+        float: left;
+        padding: 0.5em;
+    }
+
+}
+
+#side-images {
+
+    padding: 1em 0;
+    
+    img {
+        /*display: block;*/
+        /*margin: 0 auto;*/
+        max-width: 100%;
+        /*padding: 1em 0;*/
+    }
 }
 
 .sidenote {
@@ -148,12 +176,6 @@ section div {
     img {
         border: 0;
         padding: 0;
-    }
-
-    ul {
-        width: 100%;
-        margin: 0;
-        padding: 5px;
     }
 
     li {
@@ -185,7 +207,15 @@ footer {
 }
 
 
+/* =============================================================================
+   hide for viewports less than 480px
+   ========================================================================== */
 
+//#completediterations,
+#side-images,
+footer {
+    display: none;
+}
 
 
 

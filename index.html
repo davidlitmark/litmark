@@ -31,397 +31,204 @@
     Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
     For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
     <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+    <!--<script id="template-blog" type="text/template">-->
+    <!--<header><h3>{{ title }}</h3></header>-->
+    <!--<p>{{ date }}</p>-->
+    <!--{{ ingress }}-->
+    <!--</script>-->
+
+
 </head>
 
 <body>
 
 <div id="container">
-<header role="banner">
-    <h1 id="top">David Litmark</h1>
-</header>
-
-<div id="main" role="main">
-
-<section id="featurette">
-    <header>
-        <h2 class="navtitle">What's new?</h2>
+    <header role="banner">
+        <h1 id="top">David Litmark</h1>
     </header>
-    <div class="entry-content">
-    </div>
-</section>
 
-<section id="theidea">
-    <header>
-        <h2 class="navtitle">The Idea</h2>
-    </header>
-    <div class="entry-content">
-        <h3>What is this?</h3>
+    <div id="main" role="main" class="clearfix">
 
-        <p>An experiment. A process. This website is created incrementally and the progress is public and announced
-            on twitter.</p>
+        <div class="col-a">
+            <section id="featurette">
+                <header>
+                    <h2 class="navtitle">What's New?</h2>
+                </header>
+                <div class="entry-content">
+                </div>
+            </section>
 
-        <h3>Why?</h3>
+            <section id="theidea">
+                <header>
+                    <h2 class="navtitle">The Idea</h2>
+                </header>
+                <div class="entry-content">
+                    <h3>What is this?</h3>
 
-        <p>For a number of reasons. To learn and improve. And because it´s fun.</p>
+                    <p>An experiment. A process. This website is created incrementally and the progress is public and
+                        announced
+                        on twitter.</p>
 
-        <h3>How?</h3>
+                    <h3>Why?</h3>
 
-        <p>By releasing early and releasing often. And by following the process outlined below.</p>
+                    <p>For a number of reasons. To learn and improve. And because it´s fun.</p>
 
-        <h3>The result?</h3>
+                    <h3>How?</h3>
 
-        <p>Who knows? That said, I do have a direction and a bunch of requirements. But hey, since this is an agile
-            process they may change over time.</p></div>
-</section>
+                    <p>By releasing early and releasing often. And by following the process outlined below.</p>
 
-<section id="theprocess">
-    <header>
-        <h2 class="navtitle">The Process</h2>
-    </header>
-    <div class="entry-content">
-        <ol>
-            <li>All ideas are collected and prioritized in a product backlog, as user stories.</li>
-            <li>The top user story is selected and included in the sprint backlog during the coming sprint (that is,
-                iteration). As soon as that user story is done, a new is added to the sprint backlog<sup>*</sup>.
-                The ambition is to complete one sprint a week. Each sprint is short, timeboxed to no more than a few
-                spare off-hours.
-            </li>
-            <li>Following each sprint a new version of the site is released online. Release early, release often.
-                The result from the previous sprint is archived (for example, to find the site from sprint 1 use the
-                following URL: /sprint/1).
-            <li>The most recent sprint backlog is added to the site.</li>
-            <li>The new release is announced on twitter <a href="http://twitter.com/davidlitmark" rel="external me">(follow
-                @davidlitmark).</a></li>
-        </ol>
-        <br/>
+                    <h3>The result?</h3>
 
-        <p class="sidenote"><sup>*</sup> This is a modification compared to the first sprint that had more of a
-            Scrum
-            approach
-            whereas this process is more influenced by Kanban, and more suitable since the available hours each week
-            are unknown in advance.</p></div>
-</section>
-<section id="dod">
-    <header>
-        <h2 class="navtitle">Definition of Done</h2>
-    </header>
-    <div class="entry-content"><p>These requirements must be fulfilled each sprint.</p>
-        <ol>
-            <li>The html validates (HTML5)</li>
-            <li>The site appears and behaves as intended in the latest version of chrome on a mac running osx lion.
-                Here's why: The timeboxing for each sprint does not permit testing on each platform and on a variety of
-                browsers (or devices). You will probably be able to browse the site but it may look like absolute sh**e.
-                If it does it obviously will be fixed sometime, but not until I get around to it.
-            </li>
-        </ol>
-    </div>
-</section>
+                    <p>Who knows? That said, I do have a direction and a bunch of requirements. But hey, since this is
+                        an agile
+                        process they may change over time.</p></div>
+            </section>
 
-<section id="tweets">
-    <header>
-        <h2 class="navtitle">Tweets - Most Recent</h2>
-    </header>
-    <div class="entry-content">
-        <ul></ul>
-    </div>
-</section>
+            <section id="theprocess">
+                <header>
+                    <h2 class="navtitle">The Process</h2>
+                </header>
+                <div class="entry-content">
+                    <ol>
+                        <li>All ideas are collected and prioritized in a product backlog, as user stories.</li>
+                        <li>The top user story is selected and included in the sprint backlog during the coming sprint
+                            (that is,
+                            iteration). As soon as that user story is done, a new is added to the sprint
+                            backlog<sup>*</sup>.
+                            The ambition is to complete one sprint a week. Each sprint is short, timeboxed to no more
+                            than a few
+                            spare off-hours.
+                        </li>
+                        <li>Following each sprint a new version of the site is released online. Release early, release
+                            often.
+                            The result from the previous sprint is archived (for example, to find the site from sprint 1
+                            use the
+                            following URL: /sprint/1).
+                        <li>The most recent sprint backlog is added to the site.</li>
+                        <li>The new release is announced on twitter <a href="http://twitter.com/davidlitmark"
+                                                                       rel="external me">(follow
+                            @davidlitmark).</a></li>
+                    </ol>
+                    
 
-<section id="whoami">
-    <header>
-        <h2 class="navtitle">Who am I?</h2>
-    </header>
-    <div class="entry-content">
-        <p>A front-end developer / SharePoint developer currently employed by <a href="http://www.mogul.com"
-                                                                                 rel="external"
-                                                                                 title="Click to visit the mogul website">mogul</a>.
-            Disclaimer: This content does not necessarily reflect the
-            opinions of my employer.</p>
-        <ul>
-            <li>
-                <a href="http://twitter.com/davidlitmark" rel="external me">
-                    <img src="img/twitter_32.png" alt=""/>
-                    Follow me on twitter: @davidlitmark
+                    <p class="sidenote"><sup>*</sup> This is a modification compared to the first sprint that had more
+                        of a
+                        Scrum
+                        approach
+                        whereas this process is more influenced by Kanban, and more suitable since the available hours
+                        each week
+                        are unknown in advance.</p></div>
+            </section>
+            <section id="dod">
+                <header>
+                    <h2 class="navtitle">Definition of Done</h2>
+                </header>
+                <div class="entry-content"><p>This requirement must be fulfilled each release.</p>
+                    <ol>
+                        <li>The site appears and behaves as intended in the latest version of chrome on a mac running
+                            osx lion.
+                            Here's why: The time boxing for each sprint does not permit testing on each platform and on
+                            a variety of
+                            browsers (or devices). You will probably be able to browse the site but it may look like
+                            absolute sh**e.
+                            If it does it obviously will be fixed sometime, but not until I get around to it.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+
+            <!--<section id="blog">-->
+            <!--<header>-->
+            <!--<h2 class="navtitle">Blog posts</h2>-->
+            <!--</header>-->
+            <!--<div class="entry-content">-->
+            <!---->
+            
+
+            <!--</div>-->
+            <!--</section>-->
+
+            <section id="tweets">
+                <header>
+                    <h2 class="navtitle">Tweets</h2>
+                </header>
+                <div class="entry-content">
+                    <ul></ul>
+                </div>
+            </section>
+
+
+            <section id="whoami">
+                <header>
+                    <h2 class="navtitle">Who am I?</h2>
+                </header>
+                <div class="entry-content">
+                    <p>A front-end developer / SharePoint developer currently employed by <a href="http://www.mogul.com"
+                                                                                             rel="external"
+                                                                                             title="Click to visit the mogul website">mogul</a>.
+                        Disclaimer: This content does not necessarily reflect the
+                        opinions of my employer.</p>
+                    <!--<ul class="clearfix">
+                        <li>
+                            <a href="http://twitter.com/davidlitmark" rel="external me">
+                                <img src="img/twitter_32.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://se.linkedin.com/pub/david-litmark/2/347/670" rel="external me author">
+                                <img src="img/linkedin_32.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://zootool.com/user/davidlitmark" rel="external me">
+                                <img src="img/zootool_32.png" alt="">
+                            </a>
+                        </li>
+                    </ul>-->
+                </div>
+            </section>
+
+            <section id="completediterations">
+                <header>
+                    <h2>Version History - </br>completed iterations</h2>
+                </header>
+                <div class="entry-content"></div>
+            </section>
+
+        </div>
+
+        <div class="col-b">
+
+
+            <section id="side-images">
+                <a href='https://developer.mozilla.org/en/JavaScript' title='JS Documentation'>
+                    <img src='http://static.jsconf.us/promotejsh.gif' height='150' width='180' alt='JS Documentation'/>
                 </a>
-            </li>
-            <li>
-                <a href="http://se.linkedin.com/pub/david-litmark/2/347/670" rel="external me author">
-                    <img src="img/linkedin_32.png" alt="">
-                    Read my profile on LinkedIn
-                </a>
-            </li>
-            <li>
-                <a href="http://zootool.com/user/davidlitmark" rel="external me">
-                    <img src="img/zootool_32.png" alt="">
-                    Check out the zoo
-                </a>
-            </li>
-        </ul>
+            </section>
+
+        </div>
+
     </div>
-</section>
 
-<section id="completediterations">
-<header>
-    <h2>Version History - </br>completed iterations</h2>
-</header>
-<div class="entry-content">
-<article role="article">
-    <header><h3>Release 19</h3></header>
-    <ul>
-        <li>Replaced the twitter widget with my own, written using backbone.js</li>
-        <li>Added a white semi-transparent background to the main container</li>
-        <li>Added a line break to tidy things up. Can you find it?</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 18</h3></header>
-    <ul>
-        <li>Added responsiveness. Resize the browser and watch the center column.</li>
-        <li>Replaced MEgalopolis Extra with League Gothic, from <a href="http://www.theleagueofmoveabletype.com/">the league of moveable type</a></li>
-        <li>Removed lettering.js and all the creative typography</li>
-        <li>Removed the top navigation and ScrollSpy plugin</li>
-        <li>Removed all the text shadows</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 17</h3></header>
-    <ul>
-        <li>Added the top navigation and ScrollSpy plugin from the the Bootstrap toolkit. The ScrollSpy auto activates
-            navigation buttons by user's scroll position. Scroll the page and watch it in action.
-        </li>
-        <li>Added a padding to improve the experience on narrow screens (e.g iPhone)</li>
-        <li>Modularized the {less} setup by using mixins and imports</li>
-        <li>Renamed Sprint to Release in the version history (this section). This will also be effective in the announcements tweets since I no longer will post build number, but release number.</li>
-        <li>Removed the build number from the version history</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 16</h3></header>
-    <ul>
-        <li>Replaced the 320 and Up boilerplate with the HTML5 boilerplate 2.0</li>
-        <li>Introducing MEgalopolis Extra from <a href="http://www.smeltery.net/">SMELTERY</a> as header font</li>
-        <li>Added text-shadows to all headings, regardless of level</li>
-        <li>Added circles in front of all unordered list items</li>
-        <li>Removed the section "Stuff to Consider"</li>
-        <li>Removed a bunch of styles. Back to basic. YAGNI-ish.</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 15</h3></header>
-    <ul>
-        <li>Added a gradient background to all circles</li>
-        <li>Added a text shadow to each version title</li>
-        <li>Added a fading brush stroke background to each version title</li>
-        <li>Nested a bunch of CSS rules</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 14</h3></header>
-    <ul>
-        <li>Transformed all the items in the "Version history" section to circles with text on top</li>
-        <li>Aligned the contents in the "What's new", "Version history" and footer sections relative to the
-            center
-        </li>
-        <li>Decreased the page width</li>
-        <li>Rearranged the content</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 13</h3></header>
-    <ul>
-        <li>Added the "What's new?" section. This section includes all modifications to the latest release</li>
-        <li>Added a browser disclaimer to the definition of done</li>
-        <li>Reorganized the content flow</li>
-        <li>Removed the table of contents</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 12</h3></header>
-    <ul>
-        <li>{less} is now used for generating all the CSS</li>
-        <li>Increased the size of the title and centered it horizontally</li>
-        <li>Added text shadows to headings</li>
-        <li>Added rotation to all headings, just for the fun of it</li>
-        <li>Replaced the leather with paper</li>
-        <li>Updated humans TXT</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 11</h3></header>
-    <ul>
-        <li>Added the Pomodoro badge, linked to the Pomodoro Technique web site</li>
-        <li>Added the WebStorm link logo, linked to the Jet Brain's WebStorm web site</li>
-        <li>Added article elements where appropriate</li>
-        <li>Added HTML5 link relationships</li>
-        <li>Added XFN microformat to links</li>
-        <li>Added WAI-ARIA roles</li>
-        <li>Added typography styles for most of the headers. Experimental.</li>
-        <li>Added measurements for the modular scale to the CSS, based on the numbers 16 and 82</li>
-        <li>Modified the body width to align to the grid</li>
-        <li>Removed css transforms from sidenote in the "The Process" section</li>
-        <li>Removed four columns layout from the "The Idea" section</li>
-        <li>Decided not to write every update on the form "A visitor ..."</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 10</h3></header>
-    <ul>
-        <li>A visitor can view my latest bookmarks</li>
-        <li>A visitor can read my latest tweets</li>
-        <li>A visitor can view a social media icon for zootool</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 9</h3></header>
-    <ul>
-        <li>A visitor can read an introduction to a featured blog post</li>
-        <li>A visitor can navigate to the featured blog post by clicking on its title</li>
-        <li>A visitor to the blog can sign in before posting comments</li>
-        <li>A visitor to the blog can read social media reactions for a post from other services around the
-            web
-        </li>
-        <li>A visitor to the blog can mention others users within a post</li>
-        <li>A visitor to the blog can automatically reply by twitter when sharing replies to comments</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 8</h3></header>
-    <ul>
-        <li>A visitor can read blog posts at <a
-                href="http://blog.davidlitmark.com" rel="external">blog.davidlitmark.com</a></li>
-        <li>A visitor to the blog can comment on posts (DISQUS)</li>
-        <li>A visitor to the blog can read my latest tweets</li>
-        <li>A visitor to the blog can subscribe to posts (FeedBurner)</li>
-        <li>A visitor to the blog can read syntax highlighted JavaScript</li>
-        <li>A visitor to the blog can experience a very basic design and layout based on the tumblr default
-            theme
-            (to be customized further)
-        </li>
-        <li>A visitor can click a link to the blog, both from the contents section and the who-am-i
-            section
-        </li>
-        <li>A visitor can view a social media icon for tumblr</li>
-        <li>A visitor can read <i>visitor</i> instead of <i>user</i> in the description of user stories (for
-            clarification)
-        </li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 7</h3></header>
-    <ul>
-        <li>A visitor can experience a background texture reminiscent of leather (thnx <a
-                href="http://twitter.com/karllofholm" rel="external">@karllofholm</a> for the tip)
-        </li>
-        <li>A visitor can experience columns, based on screen width (css3 columns and media queries)</li>
-        <li>A visitor can experience rotated content (css3 transform)</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 6</h3></header>
-    <ul>
-        <li>A visitor can read headlines and text in web fonts PTSerifCaptionRegular and PTSerifRegular,
-            respectively
-        </li>
-        <li>A visitor can navigate the page using a table of contents, linking to each section</li>
-        <li>A visitor can experience a yellow tiled background texture, reminiscent of fabrics</li>
-        <li>A visitor can view social media icons for linkedin and twitter</li>
-        <li>A visitor can read an attribution to Komodo media, for the use of the social media icons
-            (licensed
-            under Creative Commons Attribution-Share Alike 3.0 Unported License)
-        </li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 5</h3></header>
-    <ul>
-        <li>A visitor can read headlines and text in web fonts Museo Sans and Museo, respectively (served
-            from
-            Typekit)
-        </li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 4</h3></header>
-    <ul>
-        <li>A visitor is served assets and layout styles progressively and only as they’re needed (320 and
-            Up)
-        </li>
-        <li>A visitor can experience a very basic design and layout based on the 320 and Up default styles
-            (to be
-            improved)
-        </li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 3</h3></header>
-    <ul>
-        <li>A visitor can find out about explored stuff (currently highlighted)</li>
-        <li>A visitor is served optimized images</li>
-        <li>A visitor can read user stories formulated according to the guidelines in <a
-                href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685"
-                rel="external">User
-            Stories Applied</a>
-        </li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 2</h3></header>
-    <ul>
-        <li>A visitor can view the HTML5 logo</li>
-        <li>A visitor can click a link to my LinkedIn profile</li>
-        <li>A visitor can click a link to my twitter (follow me)</li>
-        <li>A visitor can read a Definition of Done (DoD). Each sprint must fulfill the DoD prior to
-            deployment
-        </li>
-        <li>A visitor can read the build number next to the sprint increment (for clarification)</li>
-        <li>A visitor can read that the process now has more of a Kanban approach, rather than Scrum</li>
-        <li>A visitor is served minified JavaScript</li>
-        <li>A visitor is served minified CSS</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 1</h3></header>
-    <ul>
-        <li>A visitor can read an introduction on the purpose of the process</li>
-        <li>A visitor can click a humans TXT logo and read the humans.txt file</li>
-        <li>A visitor can find the source code on my github (github/davidlitmark)</li>
-        <li>A visitor can experience a very basic design and layout (to be improved)</li>
-        <li>An administrator can analyze the web traffic by using Google Analytics</li>
-    </ul>
-</article>
-<article role="article">
-    <header><h3>Release 0</h3></header>
-    <ul>
-        <li>The project is set up in Things</li>
-        <li>A set of goals and requirements are produced</li>
-        <li>The platform is decided upon</li>
-        <li>A work / build workflow is established</li>
-        <li>All domains are set up to point to one domain</li>
-        <li>A product backlog is produced</li>
-    </ul>
-</article>
-</div>
-</section>
-
-
-</div>
-
-<footer role="contentinfo">
-    <a href="humans.txt"><img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT"
-                              title="Click to read the Humans TXT"></a>
-    <a href="http://www.w3.org/html/logo/" rel="external"><img src="img/HTML5_Logo_64.png" width="64" height="64"
-                                                               alt="This site is HTML5 powered"
-                                                               title="This site is HTML5 powered"></a>
-    <a href="http://www.pomodorotechnique.com" rel="external"><img height="60" width="120" src="img/pomodoro.png"
-                                                                   alt="I Use the Pomodoro Technique"
-                                                                   title="Click to read more about the Pomodoro Technique"/></a>
-    <a href="http://www.jetbrains.com/webstorm/"
-       style="position: relative;display:inline-block; width:127px; height:37px; border:0; margin:0;padding:0;text-decoration:none;text-indent:0;"
-       rel="external" title="Click to read more about WebStorm"><span
-            style="margin: 0;padding: 0;position: absolute;top: 2px;left: 33px;font-size: 10px;cursor:pointer;  background-image:none;border:0;color: #0281b6; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Proud user of</span><img
-            src="http://www.jetbrains.com/webstorm/documentation/webstorm_banners/webstorm1/webstorm125x37_white.gif"
-            alt="Proud user of WebStorm" border="0"/></a>
-    <a href="http://www.komodomedia.com/" rel="external"><p>Social Network Icons by Komodo Media</p></a>
-</footer>
+    <footer role="contentinfo">
+        <a href="humans.txt"><img src="img/humanstxt-isolated-blank.gif" width="88" height="31" alt="Humans TXT"
+                                  title="Click to read the Humans TXT"></a>
+        <a href="http://www.w3.org/html/logo/" rel="external"><img src="img/HTML5_Logo_64.png" width="64" height="64"
+                                                                   alt="This site is HTML5 powered"
+                                                                   title="This site is HTML5 powered"></a>
+        <a href="http://www.pomodorotechnique.com" rel="external"><img height="60" width="120" src="img/pomodoro.png"
+                                                                       alt="I Use the Pomodoro Technique"
+                                                                       title="Click to read more about the Pomodoro Technique"/></a>
+        <a href="http://www.jetbrains.com/webstorm/"
+           style="position: relative;display:inline-block; width:127px; height:37px; border:0; margin:0;padding:0;text-decoration:none;text-indent:0;"
+           rel="external" title="Click to read more about WebStorm"><span
+                style="margin: 0;padding: 0;position: absolute;top: 2px;left: 33px;font-size: 10px;cursor:pointer;  background-image:none;border:0;color: #0281b6; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Proud user of</span><img
+                src="http://www.jetbrains.com/webstorm/documentation/webstorm_banners/webstorm1/webstorm125x37_white.gif"
+                alt="Proud user of WebStorm" border="0"/></a>
+        <a href="http://www.komodomedia.com/" rel="external"><p>Social Network Icons by Komodo Media</p></a>
+    </footer>
 </div>
 <!--! end of #container -->
 
@@ -437,11 +244,11 @@
 <script defer src="js/libs/backbone.js"></script>
 
 <!-- scripts concatenated and minified via ant build script-->
+<script defer src="js/mylibs/twitter.js"></script>
+<script defer src="js/mylibs/versionhistory.js"></script>
 <script defer src="js/plugins.js"></script>
 <script defer src="js/script.js"></script>
-<script defer src="js/mylibs/twitter.js"></script>
 <!-- end scripts-->
-
 
 
 <!-- Change UA-XXXXX-X to be your site's ID -->
