@@ -15,7 +15,7 @@ App.Controller = {
         new App.LatestVersionView;
     },
 
-    showVersionHistory: function() {
+    showPreviousReleases: function() {
         $("section").hide();
         $("#completediterations").show();
     },
@@ -30,11 +30,11 @@ App.Controller = {
 App.Router = Backbone.Router.extend({
     routes: {
         "": "defaultLayout",
-        "!/versions": "versionHistoryLayout"
+        "!/releases": "previousReleasesLayout"
     },
 
-    versionHistoryLayout: function() {
-        App.Controller.showVersionHistory();
+    previousReleasesLayout: function() {
+        App.Controller.showPreviousReleases();
     },
 
     defaultLayout: function() {
