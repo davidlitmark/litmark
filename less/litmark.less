@@ -42,7 +42,7 @@ body, button, input, select, textarea { font-family: PTSerifRegular,"Helvetica N
    ========================================================================== */
 
 a,a:visited { color: rgb(23, 119, 175); text-decoration: none;}
-a:hover {     color: rgb(40, 40, 40); text-decoration: underline; }
+a:hover { color: rgb(40, 40, 40); text-decoration: underline; }
 a:focus,a:active { outline: thin dotted; color: rgb(0, 0, 0);}
 
 
@@ -59,8 +59,6 @@ mark {
 
 
 #container {
-    /*background-color: rgba(255, 255, 255, 0.6);*/
-    /*padding: 2% 1%;*/
     margin:  0 auto;
     width: 90%;
 }
@@ -106,9 +104,20 @@ section {
 
     margin-bottom: 3em;
     
+    
     div {
         font-size: 1.2em;
     }
+
+}
+
+h1 {
+
+    a, a:visited, a:hover, a:focus, a:active {
+        color: #222;
+        outline: none;
+        text-decoration: none;
+        }
 
 }
 
@@ -154,10 +163,7 @@ section {
     padding: 1em 0;
     
     img {
-        /*display: block;*/
-        /*margin: 0 auto;*/
         max-width: 100%;
-        /*padding: 1em 0;*/
     }
 }
 
@@ -211,7 +217,7 @@ footer {
    hide for viewports less than 480px
    ========================================================================== */
 
-//#completediterations,
+#completediterations,
 #side-images,
 footer {
     display: none;

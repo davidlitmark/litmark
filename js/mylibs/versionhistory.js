@@ -2,6 +2,15 @@ window.App = window.App || {};
 
 var versionhistory = [
     {
+        "release": 21,
+        "items": [
+            {
+                "text": "We have routing! This is now a true <a href=\"http://en.wikipedia.org/wiki/Single-page_application\">single-page application</a>. The first modification using this is that the Version history - completed iterations section has been removed from the default view. Instead there's a link just below the What's New section that will render a version history view. Watch the url, it then contains a hashtag and is supported by the browser's history. Clicking on David Litmark takes you back to the default view. Pretty sweet!"
+            }
+
+        ]
+    },
+    {
         "release": 20,
         "items": [
 

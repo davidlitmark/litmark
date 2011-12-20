@@ -8,18 +8,41 @@
 
 window.App = window.App || {};
 
-App.Router = Backbone.Router.extend({
-    routes: {
-        "!/testing": "showVersionHistory"
-    },
-
-    showVersionHistory: function() {
-        log("hello");
-    },
-
-    initialize: function() {
+App.Controller = {
+    initApp: function() {
         new App.TweetResultsView;
         new App.VersionsResultsView;
         new App.LatestVersionView;
+    },
+
+    showVersionHistory: function() {
+        $("section").hide();
+        $("#completediterations").show();
+    },
+
+    showDefaultLayout: function() {
+        $("section").show();
+        $("#completediterations").hide();
+
+    }
+};
+
+App.Router = Backbone.Router.extend({
+    routes: {
+        "": "defaultLayout",
+        "!/versions": "versionHistoryLayout"
+    },
+
+    versionHistoryLayout: function() {
+        App.Controller.showVersionHistory();
+    },
+
+    defaultLayout: function() {
+        App.Controller.showDefaultLayout();
+    },
+
+    initialize: function() {
+        App.Controller.initApp();
     }
 });
+

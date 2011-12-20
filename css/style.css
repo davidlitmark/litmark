@@ -382,10 +382,6 @@ mark {
 }
 /*   ========================================================================== */
 #container {
-  /*background-color: rgba(255, 255, 255, 0.6);*/
-
-  /*padding: 2% 1%;*/
-
   margin: 0 auto;
   width: 90%;
 }
@@ -425,6 +421,15 @@ section {
 section div {
   font-size: 1.2em;
 }
+h1 a,
+h1 a:visited,
+h1 a:hover,
+h1 a:focus,
+h1 a:active {
+  color: #222;
+  outline: none;
+  text-decoration: none;
+}
 #featurette ul {
   list-style: circle;
 }
@@ -460,13 +465,7 @@ section div {
   padding: 1em 0;
 }
 #side-images img {
-  /*display: block;*/
-
-  /*margin: 0 auto;*/
-
   max-width: 100%;
-  /*padding: 1em 0;*/
-
 }
 .sidenote {
   background-color: rgba(255, 278, 136, 0.3);
@@ -506,7 +505,7 @@ footer {
 /* =============================================================================
    hide for viewports less than 480px
    ========================================================================== */
-#side-images, footer {
+#completediterations, #side-images, footer {
   display: none;
 }
 /* ==|== non-semantic helper classes ========================================
