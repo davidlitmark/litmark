@@ -43,9 +43,8 @@ _.templateSettings = {
 window.App = window.App || {};
 
 App.start = function() {
-    new App.TweetResultsView();
-    new App.VersionsResultsView();
-    new App.LatestVersionView();
+    new App.Router();
+    Backbone.history.start();
 };
 
 App.Templates = {
