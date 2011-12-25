@@ -22,7 +22,7 @@ App.Controller = {
 
     showDefaultLayout: function() {
         $("section").show();
-        $("#completediterations").hide();
+        $("#completediterations, #side-images").hide();
 
     }
 };
