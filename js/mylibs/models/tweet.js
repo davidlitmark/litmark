@@ -6,10 +6,13 @@
  * To change this template use File | Settings | File Templates.
  */
 
-window.App = window.App || {};
 
-define(['underscore', 'backbone'], function (_, Backbone) {
-    App.Tweet = Backbone.Model.extend({
+
+define([
+    'underscore',
+    'backbone'
+], function (_, Backbone) {
+    var Tweet = Backbone.Model.extend({
         getDate:function () {
             var dateArr = this.get("created_at").split(" ");
             return  dateArr[2] + " " + dateArr[1];
@@ -55,4 +58,6 @@ define(['underscore', 'backbone'], function (_, Backbone) {
             this.set({text:this.formatText()});
         }
     });
+
+    return Tweet;
 });

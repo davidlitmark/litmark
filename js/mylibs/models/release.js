@@ -5,3 +5,7 @@
  * Time: 14:41
  * To change this template use File | Settings | File Templates.
  */
+
+window.App = window.App || {};
+
+App.Versioninfo = Backbone.Model.extend({});
