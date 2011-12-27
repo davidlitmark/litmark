@@ -38,11 +38,12 @@
     <!--{{ ingress }}-->
     <!--</script>-->
 
+    <script data-main="js/main" src="js/libs/require.min.js"></script>
+
 
 </head>
 
 <body>
-
 
 
 <div id="container">
@@ -59,7 +60,8 @@
                 </header>
                 <div class="entry-content">
                 </div>
-                <a class="history" href="#!/releases">This is awesome! Now, show me the changelog from all the previous releases!</a>
+                <a class="history" href="#!/releases">This is awesome! Now, show me the change log from all the previous
+                    releases!</a>
             </section>
 
             <section id="theidea">
@@ -113,7 +115,7 @@
                                                                        rel="external me">(follow
                             @davidlitmark).</a></li>
                     </ol>
-                    
+
 
                     <p class="sidenote"><sup>*</sup> This is a modification compared to the first sprint that had more
                         of a
@@ -148,7 +150,7 @@
             <!--</header>-->
             <!--<div class="entry-content">-->
             <!---->
-            
+
 
             <!--</div>-->
             <!--</section>-->
@@ -239,31 +241,33 @@
 <!-- JavaScript at the bottom for fast page loading -->
 
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"><\/script>')</script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js"><\/script>')</script>-->
 
 <!-- Scripts -->
-<script  src="js/libs/underscore.js"></script>
-<script  src="js/libs/backbone.js"></script>
+<!--<script src="js/libs/underscore.js"></script>
+<script src="js/libs/backbone.js"></script>-->
 
 <!-- scripts concatenated and minified via ant build script-->
-<script src="js/mylibs/twitter.js"></script>
+<!--<script src="js/mylibs/models/tweets.js"></script>
+<script src="js/mylibs/collections/tweets.js"></script>
+<script src="js/mylibs/views/tweets.js"></script>
 <script src="js/mylibs/versionhistory.js"></script>
 <script src="js/mylibs/router.js"></script>
 <script src="js/plugins.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js"></script>-->
 <!-- end scripts-->
 
 
 <!-- Change UA-XXXXX-X to be your site's ID -->
 <script>
     window._gaq = [
-        ['_setAccount','UA-22627911-2'],
+        ['_setAccount', 'UA-22627911-2'],
         ['_trackPageview'],
         ['_trackPageLoadTime']
     ];
     Modernizr.load({
-        load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+        load:('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
 </script>
 
@@ -272,7 +276,7 @@
 chromium.org/developers/how-tos/chrome-frame-getting-started -->
 <!--[if lt IE 7 ]>
 <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-<script>window.attachEvent('onload', function() {
+<script>window.attachEvent('onload', function () {
     CFInstall.check({mode:'overlay'})
 })</script>
 <![endif]-->
