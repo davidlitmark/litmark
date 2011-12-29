@@ -9,15 +9,17 @@
 define([
     'jquery',
     'underscore',
-    'views/tweets'
-], function ($, _, Tweets) {
+    'views/tweets',
+    'views/releases',
+    'views/release-latest'
+], function ($, _, Tweets, Releases, LatestRelease) {
 
     var controller = {
 
         initApp:function () {
             new Tweets();
-//                new App.VersionsResultsView;
-//                new App.LatestVersionView;
+            new Releases();
+            new LatestRelease();
         },
 
         showPreviousReleases:function () {
@@ -28,14 +30,6 @@ define([
         showDefaultLayout:function () {
             $("section").show();
             $("#completediterations, #side-images").hide();
-        },
-
-        init:function () {
-
-//            new Router();
-            new Tweets();
-            //new App.VersionsResultsView;
-            //new App.LatestVersionView;
         }
     };
 

@@ -6,6 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
-window.App = window.App || {};
 
-App.Versioninfo = Backbone.Model.extend({});
+define([
+    'backbone'
+], function (Backbone) {
+    return Backbone.Model.extend({});
+});

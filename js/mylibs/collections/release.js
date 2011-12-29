@@ -6,15 +6,18 @@
  * To change this template use File | Settings | File Templates.
  */
 
-window.App = window.App || {};
+define([
+    'backbone',
+    'models/release'
+], function (Backbone, ReleaseModel) {
+    var ReleaseCollection = Backbone.Collection.extend({
+        model: ReleaseModel
+    });
 
-App.VersionsResultsList = Backbone.Collection.extend({
-    model: App.Versioninfo
+    return new ReleaseCollection();
+//    results.comparator = function(version) {
+//        // inverse sort
+//        return version.get("release") * -1;
+//    };
+
 });
-
-App.VersionsResults = new App.VersionsResultsList();
-
-App.VersionsResults.comparator = function(version) {
-    // inverse sort
-    return version.get("release") * -1;
-};

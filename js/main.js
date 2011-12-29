@@ -29,7 +29,7 @@ require([
             evaluate:/<%(.+?)%>/g
         };
 
-        new Router;
+        new Router();
     }
 );
 

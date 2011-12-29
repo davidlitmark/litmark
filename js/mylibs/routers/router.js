@@ -7,29 +7,29 @@
  */
 
 
-define([
+define( [
     'backbone',
     'controllers/controller'
-], function (Backbone, controller) {
-    Router = Backbone.Router.extend({
+], function ( Backbone, Controller ) {
+    var Router = Backbone.Router.extend( {
 
-        routes:{
-            "":"defaultLayout",
-            "!/releases":"previousReleasesLayout"
+        routes: {
+            "":           "defaultLayout",
+            "!/releases": "previousReleasesLayout"
         },
 
-        previousReleasesLayout:function () {
-            controller.showPreviousReleases();
+        previousReleasesLayout: function () {
+            Controller.showPreviousReleases();
         },
 
-        defaultLayout:function () {
-            controller.showDefaultLayout();
+        defaultLayout: function () {
+            Controller.showDefaultLayout();
         },
 
-        initialize:function () {
+        initialize: function () {
             Backbone.history.start();
-            controller.initApp();
+            Controller.initApp();
         }
-    });
+    } );
     return Router;
-});
+} );
