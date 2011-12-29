@@ -4,31 +4,22 @@
  *  This content may be freely distributed under the MIT license.
  */
 
-// require js
-require.config( {
+({
+    appDir:  "../",
     baseUrl: 'js/mylibs',
-    paths:   {
+    dir:     "../release",
+
+    paths:    {
         jquery:     '../libs/jquery-1.7.1.min',
         underscore: '../libs/underscore-min',
         backbone:   '../libs/backbone-optamd3-min',
         text:       '../libs/require-text.min',
         order:      '../libs/require-order.min'
-    }
-} );
-
-require( [
-    'order!underscore',
-    'order!backbone',
-    'order!routers/router'
-], function ( _, Backbone, Router ) {
-
-        _.templateSettings = {
-            interpolate: /\{\{(.+?)\}\}/g,
-            evaluate:    /<%(.+?)%>/g
-        };
-
-        new Router();
-    }
-);
-
-
+    },
+    optimize: "uglify",
+    modules:  [
+        {
+            name: "../main"
+        }
+    ]
+})
