@@ -1,11 +1,8 @@
 /**
- * Created by JetBrains WebStorm.
- * User: davidlitmark
- * Date: 2011-12-28
- * Time: 21:49
- * To change this template use File | Settings | File Templates.
+ *  davidlitmark.com
+ *  (c) 2011 David Litmark
+ *  This content may be freely distributed under the MIT license.
  */
-
 define([
     'jquery',
     'underscore',

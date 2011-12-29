@@ -1,9 +1,7 @@
 /**
- * Created by JetBrains WebStorm.
- * User: davidlitmark
- * Date: 2011-12-27
- * Time: 23:10
- * To change this template use File | Settings | File Templates.
+ *  davidlitmark.com
+ *  (c) 2011 David Litmark
+ *  This content may be freely distributed under the MIT license.
  */
 
 // require js
