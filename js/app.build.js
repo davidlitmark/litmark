@@ -6,20 +6,19 @@
 
 ({
     appDir:  "../",
-    baseUrl: 'js/mylibs',
-    dir:     "../release",
-
+    baseUrl: "js",
+    dir:     "../../release",
     paths:    {
-        jquery:     '../libs/jquery-1.7.1.min',
-        underscore: '../libs/underscore-min',
-        backbone:   '../libs/backbone-optamd3-min',
-        text:       '../libs/require-text.min',
-        order:      '../libs/require-order.min'
+        jquery:     'libs/jquery-1.7.1.min',
+        underscore: 'libs/underscore-min',
+        backbone:   'libs/backbone-optamd3-min',
+        text:       'libs/require-text.min',
+        order:      'libs/require-order.min'
     },
     optimize: "uglify",
     modules:  [
         {
-            name: "../main"
+            name: "main"
         }
     ]
 })
