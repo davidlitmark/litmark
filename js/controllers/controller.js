@@ -9,7 +9,8 @@ define([
     'underscore',
     'views/tweets',
     'views/releases',
-    'views/release-latest'
+    'views/release-latest',
+    'widgets/zootool'
 ], function ($, _, Tweets, Releases, LatestRelease) {
 
     var controller = {
