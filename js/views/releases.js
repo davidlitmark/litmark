@@ -14,6 +14,20 @@ define( [
 
     var versionhistory = [
         {
+            "release": 22,
+            "items":   [
+                {
+                    "text": "Added RequireJS as modular script loader"
+                },
+                {
+                    "text": "Added the RequireJS optimization tool (r.js) to the build process, to combine related scripts together into build layers and to minify them via UglifyJS. This is a new step following the optimization introduced by the html5 boilerplate."
+                },
+                {
+                    "text": "Redefined all the JavaScript into modules using the Asynchronous Module Definition (AMD) API. Each module is contained within its own file and stored in a folder based on type (that is, separate folders for models, views and controllers)"
+                }
+            ]
+        },
+        {
             "release": 21,
             "items":   [
                 {
