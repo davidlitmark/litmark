@@ -8,8 +8,6 @@ define( [
     'jquery'
 ], function ( $ ) {
 
-    console.log("zootool");
-
     var d = document, t = 'script',
         zb = d.createElement( t ), s = d.getElementsByTagName( t )[0];
 
@@ -22,6 +20,5 @@ define( [
         '   <header><h2>Bookmarks</h2></header>' +
         '   <div class="entry-content"><div id="zootool-badge"> ' + zb + '</div></div>' +
         '</section>' );
-    console.log("zootool done!");
 
 } );
